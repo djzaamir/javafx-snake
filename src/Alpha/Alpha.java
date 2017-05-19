@@ -9,11 +9,14 @@ import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.text.Font;
@@ -29,16 +32,25 @@ import Necklace.*;
 public class Alpha extends Application{
 
     private Necklace necklace;
+    private MenuBar menubar;
+    private Menu file ,  view , exit;
 
 
 
     @Override
     public void start(Stage primaryStage) throws Exception {
 
+        //initializing vars
         necklace =  new Necklace();
+        menubar  = new MenuBar();
+        file = new Menu("File");
+        view = new Menu("View");
+        exit = new Menu("Exit");
+        menubar.getMenus().addAll(file , view , exit);
 
-        //region Main Setup , look and feel And Event Handler's
-        //Setting up basic attributes for Stage
+
+        //region Main Setup , look and feel
+        //Setting up basic attributes for Stag
         primaryStage.setTitle("Shaolin Dual Snakes");
         primaryStage.setResizable(false);
 
@@ -46,23 +58,14 @@ public class Alpha extends Application{
         //Setting up very basic window structure for the app
         Group root = new Group();
         Scene scene  =  new Scene(root);
-        //region Event Handler's For input
-
-          scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
-              @Override
-              public void handle(KeyEvent event) {
-
-              }
-          });
-
-        //endregion
         primaryStage.setScene(scene);
 
 
         //Canvas holder Stack pane ,  this is being  used here primarily to change background color
-        StackPane holder =  new StackPane();
+        VBox holder =  new VBox();
         holder.setStyle("-fx-background-color: green");
-
+        //Adding menu bar
+        holder.getChildren().add(menubar);
 
 
         //Setting up canvas
@@ -72,6 +75,16 @@ public class Alpha extends Application{
         root.getChildren().add(holder);
         //endregion
 
+        //region Event Handler's For input
+
+        scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
+            @Override
+            public void handle(KeyEvent event) {
+
+            }
+        });
+
+        //endregion
 
         //region Injecting My Game Look And feel into the Environment
         for (Bail b:
@@ -88,8 +101,32 @@ public class Alpha extends Application{
         new AnimationTimer() {
             @Override
             public void handle(long now) {
+                  //Remove all bails from the root object
+                for (Bail b:
+                     necklace.getBails()) {
+                    root.getChildren().remove(b.getBail());
 
+                }
+
+
+                //perform update function on all bails , to change their color
+                necklace.updateBails();
+
+
+                //Repopulate canvas with updated bails
+                for (Bail b:
+                        necklace.getBails()) {
+                    root.getChildren().add(b.getBail());
+
+                }
+
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
+
         }.start();
 
         //endregion

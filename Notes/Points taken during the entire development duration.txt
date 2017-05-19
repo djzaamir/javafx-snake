@@ -23,3 +23,14 @@
 
             *We can keep the logic , cords , enviromental data into the snake
             * Then make some functions in the main thread that will be responsible to draw GUI elements based on snake objects
+
+-> check , can i control the speed of game loop very important         //This works fine as well
+-> check how can i change the position of the circle on the screen     //This works fine as well
+-> check how to manipulate the value of color using random function    //This works fine 	
+-> How to place a small menu bar at the top of game                    //This can be handled as well
+-> A way to display score on somwhere appropriate                      //
+
+=========================Ok so after alot of brainstorming and small experiments , i've reached this conclusion that i am going to be using approach number one
+                         to design my snake body parts objects as well as the whole snake as well ==============================================================
+
+

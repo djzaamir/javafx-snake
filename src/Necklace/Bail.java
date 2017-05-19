@@ -29,7 +29,7 @@ public class Bail {
     private void changeColorOnRandom(){
 
          //Changing random color for this bail
-        this.bail.setFill(new Color(new Random().nextInt(255),new Random().nextInt(255),new Random().nextInt(255),1));
+        this.bail.setFill(new Color(new Random().nextFloat(),new Random().nextFloat(),new Random().nextFloat(),1));
 
     }
 

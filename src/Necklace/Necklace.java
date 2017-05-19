@@ -31,9 +31,20 @@ public class Necklace {
     private void initBails(){
         int change_y = 50;
         for (int i = 0 ; i < bail_len ; i++){
+
+            //Creating and managing new bail for the necklace
            Bail new_bail =  new Bail();
-           new_bail.setBail(new Circle(change_y , 40 , 40));
-           change_y += 100;
+
+            Circle c = new Circle(change_y , 40 , 40);
+              c.setLayoutX(200);
+              c.setLayoutY(change_y);
+
+           new_bail.setBail(c);
+           change_y += 40;
+
+
+
+            //Add it to the list
            bails.add(new_bail);
         }
     }
