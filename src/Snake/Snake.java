@@ -41,17 +41,36 @@ public class Snake {
     //region Functional Section
 
        public void initSnake(int w , int h) {
-           System.out.println("Snake Instantiated");
-           //Getting reading initial snake
 
-           Scale new_scale = new Scale(this.color);
-           //Setting up this scale
-           new_scale.setCenter_x(center_x);
-           new_scale.setCenter_y(center_y);
-           new_scale.setRadius(radius);
-           new_scale.setLoc_x(w / 2);
-           new_scale.setLoc_y(h / 2);
-           this.scales.add(new_scale);
+           for (int i =0 ; i < initial_len ; i++){
+               if (i == 0) {//if no nodes present
+
+                   //Adding the head of snake
+                   Scale new_scale = new Scale(this.color);
+                   //Setting up this scale
+                   new_scale.setCenter_x(center_x);
+                   new_scale.setCenter_y(center_y);
+                   new_scale.setRadius(radius);
+                   new_scale.setLoc_x(w / 2);
+                   new_scale.setLoc_y(h / 2);
+                   //finally add it to the list
+                   this.scales.add(new_scale);
+
+               }else{
+
+                   Scale last_node  = this.scales.get(this.scales.size()-1); //getting Last node in the list
+                   Scale new_scale = new Scale(this.color);
+
+                   //Setting up this scale
+                   new_scale.setCenter_x(center_x);
+                   new_scale.setCenter_y(center_y);
+                   new_scale.setRadius(radius);
+                   new_scale.setLoc_x(last_node.getLoc_x()-this.radius+30); //Adjusting X position
+                   new_scale.setLoc_y(h / 2);
+                   //Finally add it to the list
+                   this.scales.add(new_scale);
+               }
+           }
        }
 
     //endregion

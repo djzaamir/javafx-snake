@@ -46,7 +46,7 @@ public class Alpha extends Application{
     //region Constructer
     public Alpha() {
         //initializing vars
-        snake =  new Snake(new Color(0,0,0,1),1200 , 600,initial_scale,false);
+        snake =  new Snake(Color.AQUA,1200 , 600,initial_scale,false);
         snake.initSnake(1200,600);
         initAlphaCompontents(); //This function will initialize all the local VARS for this Alpha class
     }
