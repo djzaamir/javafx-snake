@@ -16,9 +16,7 @@ public class Snake {
       private boolean isAlive;
       private  int initial_len;
       private Color color;
-
-
-    private boolean artificial_inteligence;
+      private boolean artificial_inteligence;
       private int center_x , center_y , radius;
       public enum DIRECTION  {LEFT , RIGHT , UP , DOWN };
       private DIRECTION snake_direction;
@@ -37,9 +35,6 @@ public class Snake {
         center_x = 10;
         center_y = 10;
         radius = 10;
-
-        //Calling the initialization function to setup snake
-        //this.initSnake(window_width , window_height);
     }//endregion
 
 

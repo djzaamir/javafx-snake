@@ -33,4 +33,7 @@
 =========================Ok so after alot of brainstorming and small experiments , i've reached this conclusion that i am going to be using approach number one
                          to design my snake body parts objects as well as the whole snake as well ==============================================================
 
+-> i am now able to display a single point of snake body
+-> Now will abstract more stuff from the Main class and try to wrap it inside the core Snake obj.
+
 

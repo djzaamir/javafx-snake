@@ -45,15 +45,10 @@ public class Alpha extends Application{
 
     //region Constructer
     public Alpha() {
-
         //initializing vars
         snake =  new Snake(new Color(0,0,0,1),1200 , 600,initial_scale,false);
         snake.initSnake(1200,600);
-        menubar  = new MenuBar();
-        file = new Menu("File");
-        view = new Menu("View");
-        exit = new Menu("Exit");
-        menubar.getMenus().addAll(file , view , exit);
+        initAlphaCompontents(); //This function will initialize all the local VARS for this Alpha class
     }
     //endregion
 
@@ -75,9 +70,11 @@ public class Alpha extends Application{
         primaryStage.setScene(scene);
 
 
-        //Canvas holder Stack pane ,  this is being  used here primarily to change background color
-        VBox holder =  new VBox();
+        //Canvas holder Vbox pane ,  this is being  used here primarily to change background color
+        VBox holder =  new VBox();  //We are using Vbox here because we want to place the menu-bar at the very top ,
+                                    // and this automatically puts first node at the top
         holder.setStyle("-fx-background-color: green");
+
         //Adding menu bar
         holder.getChildren().add(menubar);
 
@@ -102,11 +99,12 @@ public class Alpha extends Application{
 
         //region Injecting My Game Look And feel into the Environment
 
-
           for(Scale scale : snake.getScales()){
-              scale.initScale();
-              root.getChildren().add(scale.getScale());
+              scale.initScale(); //initialize the scale object , this is necessary because of the internal Implementation of Scale Object
+              root.getChildren().add(scale.getScale()); //Adding to the Content-Pane(Group) , to Group and not vbox because vbox doesnt allow
+                                                        // location override of elements , on the other hand Group does
           }
+
         //endregion
 
         //region Game-Loop
@@ -129,4 +127,14 @@ public class Alpha extends Application{
 
     //Main method , entry point for Java CODE
     public static void main(String[] args) throws Exception {launch(args);}
+
+    //other supporting functions for this class
+    //function to init all the vars
+    private void initAlphaCompontents() {
+        menubar  = new MenuBar();
+        file = new Menu("File");
+        view = new Menu("View");
+        exit = new Menu("Exit");
+        menubar.getMenus().addAll(file , view , exit);
+    }
 }

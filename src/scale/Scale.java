@@ -13,7 +13,6 @@ public class Scale {
     //region VARS
       private Circle scale;  //The Scale itself
       private  Color color;
-
       //These are helping attributes , these will be updated externally
       //And the internal update method of each scale will be updated according to these vars
       private int center_x , center_y , radius;  //Attributes for size and radius
@@ -25,14 +24,12 @@ public class Scale {
     //Here we are only importing color from external enviroment
      public Scale(Color c){
        this.color = c;
-         //initScale(); //Setup Scale to be displayed
      }
      //endregion
 
 
     //region Functional Section
      public void initScale(){
-         System.out.println("Scale Instantiated");
          scale =  new Circle(this.center_x , this.center_y ,this.radius); //Set size and radius
          scale.setLayoutX(this.loc_x); //Set x cordinates
          scale.setLayoutY(this.loc_y); //Set y cordinates
