@@ -1,5 +1,6 @@
 package Alpha;
 
+import Necklace.Necklace;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.event.EventHandler;
@@ -20,17 +21,23 @@ import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 
-import java.net.URL;
+import Necklace.*;
 
 /**
  * Created by Aamir on 5/19/2017.
  */
 public class Alpha extends Application{
 
+    private Necklace necklace;
+
+
 
     @Override
     public void start(Stage primaryStage) throws Exception {
 
+        necklace =  new Necklace();
+
+        //region Main Setup , look and feel And Event Handler's
         //Setting up basic attributes for Stage
         primaryStage.setTitle("Shaolin Dual Snakes");
         primaryStage.setResizable(false);
@@ -60,9 +67,21 @@ public class Alpha extends Application{
 
         //Setting up canvas
         Canvas canvas =  new Canvas(1200 ,600);
+        GraphicsContext gc = canvas.getGraphicsContext2D();
         holder.getChildren().add(canvas);
         root.getChildren().add(holder);
+        //endregion
 
+
+        //region Injecting My Game Look And feel into the Environment
+        for (Bail b:
+             necklace.getBails()) {
+
+            //Now append each bail to the canvas
+            root.getChildren().add(b.getBail());
+
+        }
+        //endregion
 
         //region Game-Loop
 

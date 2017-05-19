@@ -1,0 +1,25 @@
+-> Ok so  , that the very basic structure of the snake game has been setup
+
+-> I'm thinking of two approaches for developing a single snake
+
+     1) Create a snake class which will have just the cords of the snake and its body parts
+        and also some enviromental information like , IsAlive , IsHittingWall , IsHittingItSelf etc.
+        
+         * The pros of this approach , well apparently it looks like that managing it and implementing it feels more straight forword.
+         * because we will travering snakes body cords , and while doing it generate a new circle at the cord.
+         * Also all of the game logic can go inside the snake object.
+         * GUI or display code will be handles in Main thread i-e Main class that has implemted Start method for javaFx.
+
+
+     2) Another approach will i am thinking about is , that we can make it a little complex but cleaner
+         * what i want to do is , this 
+              -> I want to make Snake objects more indepedent of Main thread 
+              -> This way all of the actual body objects (GUI OBjects) will be pushed inside the snake along with the game logic
+         * Using the above will make the code more independant more OPP like , more clearner but a little bit more complex
+         * Because we have to joint the GUI objects from the snake to the main thread some  how
+
+    
+      3) Can we have somewhat a hybrid approach ???
+
+            *We can keep the logic , cords , enviromental data into the snake
+            * Then make some functions in the main thread that will be responsible to draw GUI elements based on snake objects
