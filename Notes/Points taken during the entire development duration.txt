@@ -28,7 +28,7 @@
 -> check how can i change the position of the circle on the screen     //This works fine as well
 -> check how to manipulate the value of color using random function    //This works fine 	
 -> How to place a small menu bar at the top of game                    //This can be handled as well
--> A way to display score on somwhere appropriate                      //
+-> A way to display score on somwhere appropriate                      //This is managable as well
 
 =========================Ok so after alot of brainstorming and small experiments , i've reached this conclusion that i am going to be using approach number one
                          to design my snake body parts objects as well as the whole snake as well ==============================================================

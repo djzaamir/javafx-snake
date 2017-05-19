@@ -1,6 +1,4 @@
 package Alpha;
-
-import Necklace.Necklace;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.event.EventHandler;
@@ -8,45 +6,61 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.control.Button;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
-import javafx.scene.image.Image;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.*;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
-import javafx.stage.Window;
+import Snake.*;
+import scale.Scale;
 
-import Necklace.*;
+import java.awt.*;
 
 /**
  * Created by Aamir on 5/19/2017.
+ *
+ * Each scale will be updated individually
+ * Each snake will be updating each scale
+ * Each snake will assigning new cords to the head node of snake
+ * Then the old head cords will be shifted to one step back to the rest of the body
+ * This logic will be taking place inside the update function of each snake
+ * Snake will also have an UpdateViaAI() function which will be controlled by computer
+ * Each snake will be detecting collision with other snake
+ *
+ *
+ *
  */
 public class Alpha extends Application{
 
-    private Necklace necklace;
+
+    //region VARS
+    private Snake snake;
     private MenuBar menubar;
     private Menu file ,  view , exit;
+    private final int initial_scale = 4;
+    //endregion
 
-
-
-    @Override
-    public void start(Stage primaryStage) throws Exception {
+    //region Constructer
+    public Alpha() {
 
         //initializing vars
-        necklace =  new Necklace();
+        snake =  new Snake(new Color(0,0,0,1),1200 , 600,initial_scale,false);
+        snake.initSnake(1200,600);
         menubar  = new MenuBar();
         file = new Menu("File");
         view = new Menu("View");
         exit = new Menu("Exit");
         menubar.getMenus().addAll(file , view , exit);
+    }
+    //endregion
+
+    @Override
+    //Entry point for javaFx framework
+    public void start(Stage primaryStage) throws Exception {
+
 
 
         //region Main Setup , look and feel
@@ -87,53 +101,32 @@ public class Alpha extends Application{
         //endregion
 
         //region Injecting My Game Look And feel into the Environment
-        for (Bail b:
-             necklace.getBails()) {
 
-            //Now append each bail to the canvas
-            root.getChildren().add(b.getBail());
 
-        }
+          for(Scale scale : snake.getScales()){
+              scale.initScale();
+              root.getChildren().add(scale.getScale());
+          }
         //endregion
 
         //region Game-Loop
-
-        new AnimationTimer() {
+          new AnimationTimer() {
             @Override
             public void handle(long now) {
-                  //Remove all bails from the root object
-                for (Bail b:
-                     necklace.getBails()) {
-                    root.getChildren().remove(b.getBail());
-
-                }
 
 
-                //perform update function on all bails , to change their color
-                necklace.updateBails();
 
-
-                //Repopulate canvas with updated bails
-                for (Bail b:
-                        necklace.getBails()) {
-                    root.getChildren().add(b.getBail());
-
-                }
-
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
             }
 
         }.start();
-
         //endregion
 
 
         primaryStage.show(); //Showing up the application
     }
 
+
+
+    //Main method , entry point for Java CODE
     public static void main(String[] args) throws Exception {launch(args);}
 }
