@@ -46,9 +46,11 @@
 
 -> Recent discovered issues
     *  Main window is not display properly , white area is left out right next to green portion. //Fixed , by Fixing the scene size to 1250 and Canvas width to 1300
-    *  Weired looking black dot is trailing the snake.
-    *  Control the speed of snake (AnimationTimer Class).
-    *  Late input detection.
+    *  Weired looking black dot is trailing the snake. //Will be fixing it later , doesnt look very bad at slow speeds
+
+   ? *  Control the speed of snake (AnimationTimer Class).
+    
+   ? *  Late input detection. //Probably linked with the speed issue. (Possible solution take input in a seprate thread)
     *  Weired looking trailing trails while moving at top and down borders.
     *  Probably need to change the logic of the game to GAME-OVER when a wall is HIT.
     *  But this is not a good approach , i also need to find the long term solution , what the hell is wrong  with the game at TOP and DOWN borders

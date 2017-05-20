@@ -3,8 +3,8 @@ package Food;
 import Snake.Snake;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
-import javafx.scene.transform.Scale;
 
+import java.awt.geom.Point2D;
 import java.util.Random;
 
 /**
@@ -36,10 +36,12 @@ public class Food {
 
 
     //region functional section
-    public void updateFood(Snake[] snakes){
+    public void initFood(Snake[] snakes){
         Cords cords =  getLocationForFood(snakes , window_width , window_height);
-        food.setLayoutX(cords.getX());
-        food.setLayoutY(cords.getY());
+        this.food_loc_x = cords.getX();
+        this.food_loc_y = cords.getY();
+        food.setLayoutX(this.food_loc_x);
+        food.setLayoutY(this.food_loc_y);
     }
     private Cords getLocationForFood(Snake[] snakes ,  int window_width , int window_height){
          Cords cords =  null;
@@ -73,7 +75,7 @@ public class Food {
     }
 
     //This will check if the any part of user snake has hi
-    public boolean isHittingAnyPartOfSnake(Snake[] snakes){
+    public void handleFoodCollision(Snake[] snakes){
 
         /*
         * At most two snakes will past into this function
@@ -83,8 +85,25 @@ public class Food {
         * Score card of that snake will be incremented by 1
         * And new Random Location for snake will be choosen
         * */
+        Point2D food_vector = new Point2D.Double(food_loc_x , food_loc_y);
+        for(Snake snake : snakes){
+            for(scale.Scale scale : snake.getScales()){
 
-        return false;
+                Point2D scale_vector = new Point2D.Double(scale.getLoc_x() , scale.getLoc_y());
+                int dist = (int) food_vector.distance(scale_vector);
+                System.out.println(dist);
+                if (dist < 15){
+
+                    System.out.println("Inside food collision detection");
+                    //This means that the food is being hit
+                    snake.setScore(snake.getScore()+1); //update the score of relevant snake
+                    //update the location of food
+                    initFood(snakes);//display food at new location
+                    break;
+                }
+            }
+        }
+
     }
 
     //endregion

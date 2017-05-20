@@ -30,19 +30,16 @@
       <file leaf-file-name="Alpha.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+            <state relative-caret-position="510">
+              <caret line="166" column="39" selection-start-line="166" selection-start-column="39" selection-end-line="166" selection-end-column="39" />
               <folding>
                 <element signature="docComment;class#Alpha#0" expanded="false" />
                 <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
                 <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+                <element signature="e#1849#1884#0" expanded="false" />
                 <element signature="e#2941#2975#0" expanded="false" />
                 <element signature="class#3011:4268" expanded="false" />
                 <element signature="method#handle#0;class#3011:4268" expanded="false" />
-                <element signature="e#4301#4362#0" expanded="false" />
-                <element signature="e#5005#5023#0" expanded="false" />
-                <element signature="class#5038:6493" expanded="false" />
-                <element signature="method#handle#0;class#5038:6493" expanded="false" />
                 <element signature="method#main#0;class#Alpha#0" expanded="false" />
                 <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
                 <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -51,27 +48,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scale.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
+      <file leaf-file-name="Food.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Food/Food.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
+            <state relative-caret-position="221">
+              <caret line="94" column="29" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
               <folding>
-                <element signature="docComment;class#Scale#0" expanded="false" />
-                <element signature="e#2201#2229#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#getLocationForFood#0;class#Food#0" expanded="false" />
+                <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Food.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Food/Food.java">
+      <file leaf-file-name="Scale.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="238">
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
+                <element signature="docComment;class#Scale#0" expanded="false" />
+                <element signature="e#2201#2229#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -103,9 +101,9 @@
         <option value="$PROJECT_DIR$/src/Necklace/Necklace.java" />
         <option value="$PROJECT_DIR$/src/Food/Cords.java" />
         <option value="$PROJECT_DIR$/src/Snake/Snake.java" />
+        <option value="$PROJECT_DIR$/src/scale/Scale.java" />
         <option value="$PROJECT_DIR$/src/Alpha/Alpha.java" />
         <option value="$PROJECT_DIR$/src/Food/Food.java" />
-        <option value="$PROJECT_DIR$/src/scale/Scale.java" />
       </list>
     </option>
   </component>
@@ -199,46 +197,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Scale" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snake-javafx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snake-javafx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Food" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Food" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snake-javafx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snake-javafx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Food" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -699,12 +657,12 @@
       <option name="presentableId" value="Default" />
       <updated>1495179936871</updated>
       <workItem from="1495179943399" duration="30811000" />
-      <workItem from="1495263198892" duration="17248000" />
+      <workItem from="1495263198892" duration="23864000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48059000" />
+    <option name="totallyTimeSpent" value="54675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -712,7 +670,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -724,6 +682,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20131771" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -734,7 +693,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -780,7 +738,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="35" />
+      <option name="time" value="36" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -797,13 +755,10 @@
             <element signature="docComment;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+            <element signature="e#1849#1884#0" expanded="false" />
             <element signature="e#2941#2975#0" expanded="false" />
             <element signature="class#3011:4268" expanded="false" />
             <element signature="method#handle#0;class#3011:4268" expanded="false" />
-            <element signature="e#4301#4362#0" expanded="false" />
-            <element signature="e#5005#5023#0" expanded="false" />
-            <element signature="class#5038:6493" expanded="false" />
-            <element signature="method#handle#0;class#5038:6493" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -1434,21 +1389,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Scale#0" expanded="false" />
+            <element signature="e#2201#2229#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+        <state relative-caret-position="510">
+          <caret line="166" column="39" selection-start-line="166" selection-start-column="39" selection-end-line="166" selection-end-column="39" />
           <folding>
             <element signature="docComment;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+            <element signature="e#1849#1884#0" expanded="false" />
             <element signature="e#2941#2975#0" expanded="false" />
             <element signature="class#3011:4268" expanded="false" />
             <element signature="method#handle#0;class#3011:4268" expanded="false" />
-            <element signature="e#4301#4362#0" expanded="false" />
-            <element signature="e#5005#5023#0" expanded="false" />
-            <element signature="class#5038:6493" expanded="false" />
-            <element signature="method#handle#0;class#5038:6493" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -1458,22 +1421,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Food/Food.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="221">
+          <caret line="94" column="29" selection-start-line="94" selection-start-column="29" selection-end-line="94" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getLocationForFood#0;class#Food#0" expanded="false" />
             <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
-          <folding>
-            <element signature="docComment;class#Scale#0" expanded="false" />
-            <element signature="e#2201#2229#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -128,10 +128,10 @@ public class Alpha extends Application{
                                                         // location override of elements , on the other hand Group does
           }
 
-        //This is static food here
-        Snake[] snakes = {snake};
-        food.updateFood(snakes);
-        root.getChildren().add(food.getFood());
+           //Initiating food here
+            Snake[] snakes = {snake};
+            food.initFood(snakes);
+            root.getChildren().add(food.getFood());
 
         //endregion
 
@@ -151,7 +151,7 @@ public class Alpha extends Application{
 
                     gc.clearRect(0 , 0 , window_width , window_height);
                     snake.updateSnake();
-
+                    food.handleFoodCollision(snakes);
 
                     //Now reading stuff to the screen
 
@@ -164,11 +164,13 @@ public class Alpha extends Application{
 
                     //Pausing the thread here , although we have to change this becuase this is not the proper way to do it , also its causing problems with the main thread
                     try {
-                        Thread.sleep(0);
+                        Thread.sleep(50);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                     lastUpdate = now;
+
+
                 }
 
 
@@ -179,7 +181,7 @@ public class Alpha extends Application{
 
 
         primaryStage.show(); //Showing up the application
-    }
+        }
 
 
 
