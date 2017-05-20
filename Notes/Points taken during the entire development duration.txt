@@ -35,5 +35,7 @@
 
 -> i am now able to display a single point of snake body
 -> Now will abstract more stuff from the Main class and try to wrap it inside the core Snake obj.
+-> able to display multiple points / parts of body onto the screen
+-> I am facing this issue of redrawing elements on their new cordinates using javaFx canvas.
 
 

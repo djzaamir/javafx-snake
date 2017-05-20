@@ -10,14 +10,10 @@ import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.VBox;
-import javafx.scene.paint.*;
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import Snake.*;
 import scale.Scale;
-
-import java.awt.*;
 
 /**
  * Created by Aamir on 5/19/2017.
@@ -40,15 +36,17 @@ public class Alpha extends Application{
     private Snake snake;
     private MenuBar menubar;
     private Menu file ,  view , exit;
-    private final int initial_scale = 4;
+    private final int initial_scale = 5;
+    private final int window_width  = 1200;
+    private final int window_height = 600;
     //endregion
 
     //region Constructer
     public Alpha() {
         //initializing vars
-        snake =  new Snake(Color.AQUA,1200 , 600,initial_scale,false);
+        snake =  new Snake(Color.RED,1200 , 600,initial_scale,false);
         snake.initSnake(1200,600);
-        initAlphaCompontents(); //This function will initialize all the local VARS for this Alpha class
+        initComponents(); //This function will initialize all the local VARS for this Alpha class
     }
     //endregion
 
@@ -80,7 +78,7 @@ public class Alpha extends Application{
 
 
         //Setting up canvas
-        Canvas canvas =  new Canvas(1200 ,600);
+        Canvas canvas =  new Canvas(window_width ,window_height);
         GraphicsContext gc = canvas.getGraphicsContext2D();
         holder.getChildren().add(canvas);
         root.getChildren().add(holder);
@@ -91,7 +89,32 @@ public class Alpha extends Application{
         scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
+                switch (event.getCode()){
+                    case A:
+                        if (snake.getSnake_direction() != Snake.DIRECTION.RIGHT){
+                            snake.setSnake_direction(Snake.DIRECTION.LEFT);
+                        }
+                        break;
+                    case W:
+                        if (snake.getSnake_direction() != Snake.DIRECTION.DOWN){
+                            snake.setSnake_direction(Snake.DIRECTION.UP);
+                        }
+                        break;
+                    case D:
+                        if (snake.getSnake_direction() != Snake.DIRECTION.LEFT){
+                            snake.setSnake_direction(Snake.DIRECTION.RIGHT);
+                        }
+                        break;
+                    case S:
+                        if (snake.getSnake_direction() !=  Snake.DIRECTION.UP){
+                            snake.setSnake_direction(Snake.DIRECTION.DOWN);
+                        }
+                        break;
+                    default:
+                        //do nothing
+                        break;
 
+                }
             }
         });
 
@@ -103,7 +126,7 @@ public class Alpha extends Application{
               scale.initScale(); //initialize the scale object , this is necessary because of the internal Implementation of Scale Object
               root.getChildren().add(scale.getScale()); //Adding to the Content-Pane(Group) , to Group and not vbox because vbox doesnt allow
                                                         // location override of elements , on the other hand Group does
-          }
+              }
 
         //endregion
 
@@ -112,8 +135,32 @@ public class Alpha extends Application{
             @Override
             public void handle(long now) {
 
+                //clearing the canvas
+
+                for(Scale scale : snake.getScales()){
+                    root.getChildren().remove(scale.getScale());
+                }
 
 
+                gc.clearRect(0 , 0 , window_width , window_height);
+               snake.updateSnake();
+
+
+                //Now readding stuff to the screen
+
+                for(Scale scale : snake.getScales()){
+                    scale.initScale(); //initialize the scale object , this is necessary because of the internal Implementation of Scale Object
+                    root.getChildren().add(scale.getScale()); //Adding to the Content-Pane(Group) , to Group and not vbox because vbox doesnt allow
+                    // location override of elements , on the other hand Group does
+                }
+
+
+                //Pausing the thread here , although we have to change this becuase this is not the proper way to do it , also its causing problems with the main thread
+                try {
+                    Thread.sleep(50);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
 
         }.start();
@@ -130,7 +177,7 @@ public class Alpha extends Application{
 
     //other supporting functions for this class
     //function to init all the vars
-    private void initAlphaCompontents() {
+    private void initComponents() {
         menubar  = new MenuBar();
         file = new Menu("File");
         view = new Menu("View");
