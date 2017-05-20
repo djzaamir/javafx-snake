@@ -1,4 +1,5 @@
 package Alpha;
+import Food.Food;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.event.EventHandler;
@@ -17,7 +18,6 @@ import scale.Scale;
 
 /**
  * Created by Aamir on 5/19/2017.
- *
  * Each scale will be updated individually
  * Each snake will be updating each scale
  * Each snake will assigning new cords to the head node of snake
@@ -25,15 +25,14 @@ import scale.Scale;
  * This logic will be taking place inside the update function of each snake
  * Snake will also have an UpdateViaAI() function which will be controlled by computer
  * Each snake will be detecting collision with other snake
- *
- *
- *
  */
+
 public class Alpha extends Application{
 
 
     //region VARS
     private Snake snake;
+    private Food food;
     private MenuBar menubar;
     private Menu file ,  view , exit;
     private final int initial_scale = 5;
@@ -44,8 +43,9 @@ public class Alpha extends Application{
     //region Constructer
     public Alpha() {
         //initializing vars
-        snake =  new Snake(Color.RED,1200 , 600,initial_scale,false);
+        snake =  new Snake(Color.RED,window_width , window_height,initial_scale,false);
         snake.initSnake(1200,600);
+        food =  new Food(window_width , window_height ,  Color.WHEAT);
         initComponents(); //This function will initialize all the local VARS for this Alpha class
     }
     //endregion
@@ -126,7 +126,10 @@ public class Alpha extends Application{
               scale.initScale(); //initialize the scale object , this is necessary because of the internal Implementation of Scale Object
               root.getChildren().add(scale.getScale()); //Adding to the Content-Pane(Group) , to Group and not vbox because vbox doesnt allow
                                                         // location override of elements , on the other hand Group does
-              }
+          }
+        Snake[] snakes = {snake};
+        food.updateFood(snakes);
+        root.getChildren().add(food.getFood());
 
         //endregion
 
@@ -135,32 +138,38 @@ public class Alpha extends Application{
             @Override
             public void handle(long now) {
 
-                //clearing the canvas
+                long lastUpdate = 0;
+                if (now - lastUpdate >= 28_000_0000) {
 
-                for(Scale scale : snake.getScales()){
-                    root.getChildren().remove(scale.getScale());
+                    //clearing the canvas
+                    for(Scale scale : snake.getScales()){
+                        root.getChildren().remove(scale.getScale());
+                    }
+
+
+                    gc.clearRect(0 , 0 , window_width , window_height);
+                    snake.updateSnake();
+
+
+                    //Now reading stuff to the screen
+
+                    for(Scale scale : snake.getScales()){
+                        scale.initScale(); //initialize the scale object , this is necessary because of the internal Implementation of Scale Object
+                        root.getChildren().add(scale.getScale()); //Adding to the Content-Pane(Group) , to Group and not vbox because vbox doesnt allow
+                        // location override of elements , on the other hand Group does
+                    }
+
+
+                    //Pausing the thread here , although we have to change this becuase this is not the proper way to do it , also its causing problems with the main thread
+                    try {
+                        Thread.sleep(0);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    lastUpdate = now;
                 }
 
 
-                gc.clearRect(0 , 0 , window_width , window_height);
-               snake.updateSnake();
-
-
-                //Now readding stuff to the screen
-
-                for(Scale scale : snake.getScales()){
-                    scale.initScale(); //initialize the scale object , this is necessary because of the internal Implementation of Scale Object
-                    root.getChildren().add(scale.getScale()); //Adding to the Content-Pane(Group) , to Group and not vbox because vbox doesnt allow
-                    // location override of elements , on the other hand Group does
-                }
-
-
-                //Pausing the thread here , although we have to change this becuase this is not the proper way to do it , also its causing problems with the main thread
-                try {
-                    Thread.sleep(50);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
             }
 
         }.start();
@@ -169,6 +178,10 @@ public class Alpha extends Application{
 
         primaryStage.show(); //Showing up the application
     }
+
+
+
+
 
 
 
@@ -184,4 +197,6 @@ public class Alpha extends Application{
         exit = new Menu("Exit");
         menubar.getMenus().addAll(file , view , exit);
     }
+
+
 }

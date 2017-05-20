@@ -21,6 +21,7 @@ public class Snake {
       public enum DIRECTION  {LEFT , RIGHT , UP , DOWN };
       private DIRECTION snake_direction;
       private int movement_offet = 10;
+      private int score = 0;
     //endregion
 
     //region constructor
@@ -161,6 +162,13 @@ public class Snake {
 
     public void setSnake_direction(Snake.DIRECTION snake_direction) {
         this.snake_direction = snake_direction;
+    }
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
     }
     //endregion
 
