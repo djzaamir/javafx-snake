@@ -58,5 +58,24 @@
           they will hit eventually but it  will be not very smooth.
 
 
+                                          ==============MILE STONE ACHEIVED FOOD IS not being eaten====================
 
 
+  -> Next targets (Relatively Small targets)
+       *Although the collision dectection with food looks good and dandy but still show it to others and let them decide is it good enough? 
+       * fix the game logic to die on collision
+       * FIX THE LATE INPUT DETECTION , IMMEDIATE ACTION REQUIRED.
+       * Do Something about the score card
+       * Add funcionalities into the menus
+       * snake size increases when a new food is eaten
+
+  -> Next major mile stones
+       * Introduce another snake
+       * Introduce AI controlled snake
+       * introuce sound
+       * change background
+       * Store score locally and on server , while asking for names and some sort of PK related to each user
+
+
+
+   ->Pack the game into Executable Jar or exe file , and share it with frinds , it should run on most of the pcs

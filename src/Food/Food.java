@@ -89,10 +89,13 @@ public class Food {
         for(Snake snake : snakes){
             for(scale.Scale scale : snake.getScales()){
 
+                //Calculating Euclidean Distance (Pythagoras theorem)
                 Point2D scale_vector = new Point2D.Double(scale.getLoc_x() , scale.getLoc_y());
                 int dist = (int) food_vector.distance(scale_vector);
                 System.out.println(dist);
-                if (dist < 15){
+
+
+                if (dist < 17){
 
                     System.out.println("Inside food collision detection");
                     //This means that the food is being hit
