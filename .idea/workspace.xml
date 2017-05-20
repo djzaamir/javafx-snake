@@ -30,13 +30,12 @@
       <file leaf-file-name="Alpha.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="108" column="54" selection-start-line="108" selection-start-column="54" selection-end-line="108" selection-end-column="54" />
+            <state relative-caret-position="323">
+              <caret line="92" column="30" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1730#1765#0" expanded="false" />
-                <element signature="e#4134#4195#0" expanded="false" />
-                <element signature="method#handle#0;class#4724:5958" expanded="false" />
+                <element signature="method#handle#0;class#4735:5969" expanded="false" />
                 <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
               </folding>
             </state>
@@ -46,11 +45,13 @@
       <file leaf-file-name="Snake.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="162" column="8" selection-start-line="162" selection-start-column="8" selection-end-line="162" selection-end-column="47" />
+            <state relative-caret-position="141">
+              <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
+                <element signature="method#updateSnake#0;class#Snake#0" expanded="false" />
+                <element signature="e#4685#4713#0" expanded="false" />
                 <element signature="e#5060#5061#0" expanded="true" />
                 <element signature="e#5098#5099#0" expanded="true" />
                 <element signature="e#5169#5170#0" expanded="true" />
@@ -63,8 +64,8 @@
       <file leaf-file-name="Scale.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
               <folding>
                 <element signature="docComment;class#Scale#0" expanded="false" />
                 <element signature="n#!!doc;n#scale#0;n#Scale#0" expanded="false" />
@@ -654,16 +655,16 @@
       <option name="presentableId" value="Default" />
       <updated>1495179936871</updated>
       <workItem from="1495179943399" duration="30811000" />
-      <workItem from="1495263198892" duration="5939000" />
+      <workItem from="1495263198892" duration="6622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36750000" />
+    <option name="totallyTimeSpent" value="37433000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -677,7 +678,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20131771" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20131771" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -748,8 +749,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1730#1765#0" expanded="false" />
-            <element signature="e#4134#4195#0" expanded="false" />
-            <element signature="method#handle#0;class#4724:5958" expanded="false" />
+            <element signature="method#handle#0;class#4735:5969" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>
@@ -1029,6 +1029,8 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
+            <element signature="method#updateSnake#0;class#Snake#0" expanded="false" />
+            <element signature="e#4685#4713#0" expanded="false" />
             <element signature="e#5060#5061#0" expanded="true" />
             <element signature="e#5098#5099#0" expanded="true" />
             <element signature="e#5169#5170#0" expanded="true" />
@@ -1357,8 +1359,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
           <folding>
             <element signature="docComment;class#Scale#0" expanded="false" />
             <element signature="n#!!doc;n#scale#0;n#Scale#0" expanded="false" />
@@ -1370,11 +1372,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="162" column="8" selection-start-line="162" selection-start-column="8" selection-end-line="162" selection-end-column="47" />
+        <state relative-caret-position="141">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
+            <element signature="method#updateSnake#0;class#Snake#0" expanded="false" />
+            <element signature="e#4685#4713#0" expanded="false" />
             <element signature="e#5060#5061#0" expanded="true" />
             <element signature="e#5098#5099#0" expanded="true" />
             <element signature="e#5169#5170#0" expanded="true" />
@@ -1385,13 +1389,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="108" column="54" selection-start-line="108" selection-start-column="54" selection-end-line="108" selection-end-column="54" />
+        <state relative-caret-position="323">
+          <caret line="92" column="30" selection-start-line="92" selection-start-column="30" selection-end-line="92" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1730#1765#0" expanded="false" />
-            <element signature="e#4134#4195#0" expanded="false" />
-            <element signature="method#handle#0;class#4724:5958" expanded="false" />
+            <element signature="method#handle#0;class#4735:5969" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>

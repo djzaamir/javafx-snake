@@ -90,22 +90,22 @@ public class Alpha extends Application{
             @Override
             public void handle(KeyEvent event) {
                 switch (event.getCode()){
-                    case A:
+                    case LEFT:
                         if (snake.getSnake_direction() != Snake.DIRECTION.RIGHT){
                             snake.setSnake_direction(Snake.DIRECTION.LEFT);
                         }
                         break;
-                    case W:
+                    case UP:
                         if (snake.getSnake_direction() != Snake.DIRECTION.DOWN){
                             snake.setSnake_direction(Snake.DIRECTION.UP);
                         }
                         break;
-                    case D:
+                    case RIGHT:
                         if (snake.getSnake_direction() != Snake.DIRECTION.LEFT){
                             snake.setSnake_direction(Snake.DIRECTION.RIGHT);
                         }
                         break;
-                    case S:
+                    case DOWN:
                         if (snake.getSnake_direction() !=  Snake.DIRECTION.UP){
                             snake.setSnake_direction(Snake.DIRECTION.DOWN);
                         }
