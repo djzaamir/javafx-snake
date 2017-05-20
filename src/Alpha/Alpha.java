@@ -36,7 +36,7 @@ public class Alpha extends Application{
     private MenuBar menubar;
     private Menu file ,  view , exit;
     private final int initial_scale = 5;
-    private final int window_width  = 1200;
+    private final int window_width  = 1250;
     private final int window_height = 600;
     //endregion
 
@@ -64,7 +64,7 @@ public class Alpha extends Application{
 
         //Setting up very basic window structure for the app
         Group root = new Group();
-        Scene scene  =  new Scene(root);
+        Scene scene  =  new Scene(root , window_width  , window_height);
         primaryStage.setScene(scene);
 
 
@@ -78,7 +78,7 @@ public class Alpha extends Application{
 
 
         //Setting up canvas
-        Canvas canvas =  new Canvas(window_width ,window_height);
+        Canvas canvas =  new Canvas(window_width + 50 ,window_height);
         GraphicsContext gc = canvas.getGraphicsContext2D();
         holder.getChildren().add(canvas);
         root.getChildren().add(holder);
@@ -127,6 +127,8 @@ public class Alpha extends Application{
               root.getChildren().add(scale.getScale()); //Adding to the Content-Pane(Group) , to Group and not vbox because vbox doesnt allow
                                                         // location override of elements , on the other hand Group does
           }
+
+        //This is static food here
         Snake[] snakes = {snake};
         food.updateFood(snakes);
         root.getChildren().add(food.getFood());
@@ -182,12 +184,10 @@ public class Alpha extends Application{
 
 
 
-
-
-
     //Main method , entry point for Java CODE
     public static void main(String[] args) throws Exception {launch(args);}
 
+    //region Supporting methods for ALpha
     //other supporting functions for this class
     //function to init all the vars
     private void initComponents() {
@@ -197,6 +197,5 @@ public class Alpha extends Application{
         exit = new Menu("Exit");
         menubar.getMenus().addAll(file , view , exit);
     }
-
-
+    //endregion
 }

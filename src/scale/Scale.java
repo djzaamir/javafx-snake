@@ -17,6 +17,7 @@ public class Scale {
       //And the internal update method of each scale will be updated according to these vars
       private int center_x , center_y , radius;  //Attributes for size and radius
       private int loc_x , loc_y;  //Attributes for location of scale
+      public static  int window_width ,  window_height; //Making them static because all the Scales will share it
     //endregion
 
 
@@ -45,6 +46,26 @@ public class Scale {
         //We are not going to update the size of scale on runtime
         //Update color property
         this.scale.setFill(this.color);
+    }
+
+
+    //function to check if the head node is hitting any WALL , and take some decision accordingly
+    public void isScaleHittingAnyWall(){
+
+        int offet_from_border = 18;
+
+        if (this.loc_x >= this.window_width ){ // Exceeding the right SIDE
+           this.loc_x  = 0;
+
+        }else if (this.loc_x <= -5){
+            this.loc_x = this.window_width;
+
+        }else if(this.loc_y >= this.window_height - offet_from_border){
+            this.loc_y = offet_from_border;
+
+        }else if(this.loc_y <= offet_from_border){
+            this.loc_y = this.window_height;
+        }
     }
 
     //endregion

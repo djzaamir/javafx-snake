@@ -34,8 +34,27 @@
                          to design my snake body parts objects as well as the whole snake as well ==============================================================
 
 -> i am now able to display a single point of snake body
--> Now will abstract more stuff from the Main class and try to wrap it inside the core Snake obj.
--> able to display multiple points / parts of body onto the screen
--> I am facing this issue of redrawing elements on their new cordinates using javaFx canvas.
+-> Now will abstract more stuff from the Main class and try to wrap it inside the core Snake obj. //Done
+-> able to display multiple points / parts of body onto the screen   //Yup
+-> I am facing this issue of redrawing elements on their new cordinates using javaFx canvas. //Done its fixed now
+-> Now able to generate food
+-> And also now able to do some collision detectionn and take appropriate operations against it
+
+
+=======================Mile-Stone acheived basic simple snake game is now in working state=======================================================================
+
+
+-> Recent discovered issues
+    *  Main window is not display properly , white area is left out right next to green portion. //Fixed , by Fixing the scene size to 1250 and Canvas width to 1300
+    *  Weired looking black dot is trailing the snake.
+    *  Control the speed of snake (AnimationTimer Class).
+    *  Late input detection.
+    *  Weired looking trailing trails while moving at top and down borders.
+    *  Probably need to change the logic of the game to GAME-OVER when a wall is HIT.
+    *  But this is not a good approach , i also need to find the long term solution , what the hell is wrong  with the game at TOP and DOWN borders
+    *  Snake and food is not lined up , what this means is that the (x,y) cords might not match every time a snake hits a food
+          they will hit eventually but it  will be not very smooth.
+
+
 
 

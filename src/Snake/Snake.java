@@ -22,6 +22,7 @@ public class Snake {
       private DIRECTION snake_direction;
       private int movement_offet = 10;
       private int score = 0;
+      private  int window_width ,  window_height;
     //endregion
 
     //region constructor
@@ -32,7 +33,10 @@ public class Snake {
         this.color = color;
         this.snake_direction = DIRECTION.RIGHT; //Initially the snake will be moving towards  right
         this.artificial_inteligence = AI_CONTROL;
-
+        this.window_width   = window_width;
+        this.window_height  = window_width;
+        Scale.window_width  = window_width;
+        Scale.window_height = window_height;
         //setting up size and radius for each scale
         center_x = 10;
         center_y = 10;
@@ -110,25 +114,25 @@ public class Snake {
 
                    //head.setLoc_x(head.getLoc_x()-this.radius-this.movement_offet);
                    this.scales.get(0).setLoc_x(head.getLoc_x()-this.radius-this.movement_offet);
-
+                   this.scales.get(0).isScaleHittingAnyWall();
                    break;
                case UP:
                    //Decrement Y-axis
 
                    this.scales.get(0).setLoc_y(head.getLoc_y()-this.radius-this.movement_offet);
-
+                   this.scales.get(0).isScaleHittingAnyWall();
                    break;
                case RIGHT:
                    //Increment X-axis
 
                    this.scales.get(0).setLoc_x(head.getLoc_x()+this.radius+this.movement_offet);
-
+                   this.scales.get(0).isScaleHittingAnyWall();
                    break;
                case DOWN:
                    //Increment Y-axis
 
                    this.scales.get(0).setLoc_y(head.getLoc_y()+this.radius+this.movement_offet);
-
+                   this.scales.get(0).isScaleHittingAnyWall();
                    break;
                default:
                    //Dont do anything here

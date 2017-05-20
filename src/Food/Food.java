@@ -18,7 +18,7 @@ public class Food {
      private Rectangle food;
      private  int food_loc_x;
      private  int food_loc_y;
-     private  int w_l = 15;
+     private  int w_l = 16; //Food Size
      private  int window_width ,  window_height;
     //endregion
 
@@ -70,6 +70,21 @@ public class Food {
             while(!cords_good);
 
          return cords;
+    }
+
+    //This will check if the any part of user snake has hi
+    public boolean isHittingAnyPartOfSnake(Snake[] snakes){
+
+        /*
+        * At most two snakes will past into this function
+        * The first one will Be User snake
+        * And the second one will be Computer controlled snake
+        * if any of them hits the food
+        * Score card of that snake will be incremented by 1
+        * And new Random Location for snake will be choosen
+        * */
+
+        return false;
     }
 
     //endregion
