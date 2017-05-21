@@ -45,13 +45,20 @@ public class Food {
     }
     private Cords getLocationForFood(Snake[] snakes ,  int window_width , int window_height){
          Cords cords =  null;
+         int offset_from_border = 22; //This offset is the area from top and bottom which will not be picked for food location
          boolean cords_good = true;
 
             do{
                 cords_good = true; //Assuming these are good cords
 
                 //Generate Random new Cords for and x,y cords
-                cords =  new Cords(new Random().nextInt(window_width) , new Random().nextInt(window_height));
+                boolean height_good = false;
+                int height = 0;
+                while(!height_good){
+                    height = new Random().nextInt(window_height);
+                    height_good = height > offset_from_border ? true:false;
+                }
+                cords =  new Cords(new Random().nextInt(window_width-offset_from_border) ,  height);
 
                 //Now checking these cords in snakes
                 //If found in any snake , dont use these cords , instead gen more new cordd
@@ -95,9 +102,7 @@ public class Food {
                 System.out.println(dist);
 
 
-                if (dist < 17){
-
-                    System.out.println("Inside food collision detection");
+                if (dist < 16){
                     //This means that the food is being hit
                     snake.setScore(snake.getScore()+1); //update the score of relevant snake
                     //update the location of food
