@@ -188,7 +188,8 @@ public class Snake  implements  Runnable{
 
     //Artificial Intelligence function , to control snake automatically
     private void generateNewNodeArtificialIntelligence(){
-      if (this.timerCountToChangeDirection == 6){//this will turn on after adding three consecutive scales
+
+      if (this.timerCountToChangeDirection == 1){//this will turn on after adding three consecutive scales
           this.timerCountToChangeDirection = 0;
 
           /*
@@ -199,6 +200,97 @@ public class Snake  implements  Runnable{
           *     => Close to User_snake
           * */
 
+          boolean direction_good = true; //assuming good
+          Scale head_node = this.scales.get(0); //getting head node
+
+          do{
+              int random_direction = new Random().nextInt(4)+1; //adding 1 , coz we dont want 0 here
+              //1 -> left
+              //2 ->  UP
+              //3 ->  Right
+              //4 ->  Down
+
+              switch (random_direction){
+                  case 1:
+
+                      //MOVE LEFT   => Decrement X
+                      //CHECK COLLISION WITH FOOD on Adding x=x+1
+                      //CHECK COLLISION WITH USER-SNAKE on Adding x = x+1
+                      //CHECK SELF COLLISION on Adding x = x+1
+                      int potential_x = head_node.getLoc_x()-this.radius-this.movement_offet; //Potential x after next update
+                      //Y remains same , so not checking of y
+
+                      //if NOT colliding with food AND USER-SNAKE AND ITSELF
+                      if (    !isCollidingWithFood(potential_x , head_node.getLoc_y())  &&
+                              !hitsOtherSnake(user_snake)  &&
+                              !isCollidingWithItSelf(potential_x , head_node.getLoc_y())){
+                          //Then it means that the new location is good to assign
+                          head_node.setLoc_x(potential_x);
+                          direction_good = true; //break outtta loop
+                      }
+
+                      break;
+                  case 2:
+
+
+                      //MOVE UP   => Decrement Y
+                      //Rest of the logic is same as above
+                      int potential_y = head_node.getLoc_y()-this.radius-this.movement_offet; //Potential y after next update
+                      //x remains same , so not checking of y
+
+                      //if NOT colliding with food AND USER-SNAKE AND ITSELF
+                      if (    !isCollidingWithFood(potential_y , head_node.getLoc_y())  &&
+                              !hitsOtherSnake(user_snake)  &&
+                              !isCollidingWithItSelf(potential_y , head_node.getLoc_y())){
+                          //Then it means that the new location is good to assign
+                          head_node.setLoc_y(potential_y);
+                          direction_good = true; //break outtta loop
+                      }
+
+
+                      break;
+                  case 3:
+
+
+                      //MOVE RIGHT   => Increment X
+                      //Rest of the logic is same as above
+                      int potential_x_ = head_node.getLoc_y()+this.radius+this.movement_offet; //Potential x after next update
+                      //Y remains same , so not checking of y
+
+                      //if NOT colliding with food AND USER-SNAKE AND ITSELF
+                      if (    !isCollidingWithFood(potential_x_ , head_node.getLoc_y())  &&
+                              !hitsOtherSnake(user_snake)  &&
+                              !isCollidingWithItSelf(potential_x_ , head_node.getLoc_y())){
+                          //Then it means that the new location is good to assign
+                          head_node.setLoc_x(potential_x_);
+                          direction_good = true; //break outtta loop
+                      }
+
+                      break;
+                  case 4:
+
+
+                      //MOVE DOWN   => Increment Y
+                      //Rest of the logic is same as above
+                      int potential_y__ = head_node.getLoc_y()+this.radius+this.movement_offet; //Potential Y after next update
+                      //x remains same , so not checking of y
+
+                      //if NOT colliding with food AND USER-SNAKE AND ITSELF
+                      if (    !isCollidingWithFood(potential_y__ , head_node.getLoc_y())  &&
+                              !hitsOtherSnake(user_snake)  &&
+                              !isCollidingWithItSelf(potential_y__ , head_node.getLoc_y())){
+                          //Then it means that the new location is good to assign
+                          head_node.setLoc_y(potential_y__);
+                          direction_good = true; //break outtta loop
+                      }
+
+                      break;
+                  default:
+                      //do nothing
+                      break;
+              }
+          }
+          while(!direction_good);//end of while Main while loop
 
 
 
@@ -238,7 +330,7 @@ public class Snake  implements  Runnable{
     }
 
     //TO detect collision with other snake
-    public void hitsOtherSnake(Snake snake2) {
+    public boolean hitsOtherSnake(Snake snake2) {
 
         int hit_proximity = 20;
         /*
@@ -250,11 +342,26 @@ public class Snake  implements  Runnable{
             int dist = (int)user_headnode_vector.distance(computer_headnode_vector);
             if (dist < hit_proximity){
                this.isAlive = false;
-                break;
+                return true;
             }
 
         }
+      return  false;
+    }
 
+    private boolean isCollidingWithFood(int  x, int y){
+        int hit_proximity = 20;  //Distance to keep from food
+        Point2D food_vector =  new Point2D.Double(x , y);
+          //Scanning food
+        for(Scale scale : this.scales){
+            Point2D scale_vector =  new Point2D.Double(scale.getLoc_x() , scale.getLoc_y());
+            int dist = (int) food_vector.distance(scale_vector);
+            if (dist < hit_proximity){
+                return true;
+            }
+        }
+
+         return false;
     }
 
     @Override

@@ -50,41 +50,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Snake.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Snake.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+            <state relative-caret-position="612">
+              <caret line="197" column="15" selection-start-line="197" selection-start-column="15" selection-end-line="197" selection-end-column="15" />
               <folding>
                 <element signature="docComment;class#Snake#0" expanded="false" />
                 <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
                 <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
                 <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-                <element signature="e#1760#1787#0" expanded="false" />
                 <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
                 <element signature="e#1912#1933#0" expanded="false" />
                 <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-                <element signature="method#updateSnake#0;class#Snake#0" expanded="false" />
                 <element signature="method#generateNewHeadNode#0;class#Snake#0" expanded="false" />
-                <element signature="method#generateNewNodeArtificialIntelligence#0;class#Snake#0" expanded="false" />
+                <element signature="e#8089#8100#0" expanded="false" />
+                <element signature="e#8272#8300#0" expanded="false" />
+                <element signature="e#8652#8691#0" expanded="false" />
+                <element signature="e#9328#9354#0" expanded="false" />
+                <element signature="e#9562#9601#0" expanded="false" />
+                <element signature="e#10239#10268#0" expanded="false" />
+                <element signature="e#10477#10516#0" expanded="false" />
+                <element signature="e#11156#11184#0" expanded="false" />
+                <element signature="e#11394#11433#0" expanded="false" />
+                <element signature="method#ifSnakeCollided#0;class#Snake#0" expanded="false" />
                 <element signature="method#isCollidingWithItSelf#0;class#Snake#0" expanded="false" />
-                <element signature="e#8447#8527#0" expanded="false" />
+                <element signature="e#12823#12903#0" expanded="false" />
                 <element signature="method#hitsOtherSnake#0;class#Snake#0" expanded="false" />
-                <element signature="method#run#0;class#Snake#0" expanded="false" />
-                <element signature="e#10216#10289#0" expanded="false" />
-                <element signature="e#10724#10752#0" expanded="false" />
-                <marker date="1495396008109" expanded="false" signature="8016:8238" ph="{...}" />
+                <element signature="method#isCollidingWithFood#0;class#Snake#0" expanded="false" />
+                <element signature="e#15144#15217#0" expanded="false" />
+                <element signature="e#15652#15680#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scale.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -118,8 +114,8 @@
         <option value="$PROJECT_DIR$/src/root_EventHandler_thread/root_Eventhandler_thread.java" />
         <option value="$PROJECT_DIR$/src/scale/Scale.java" />
         <option value="$PROJECT_DIR$/src/Food/Food.java" />
-        <option value="$PROJECT_DIR$/src/Snake/Snake.java" />
         <option value="$PROJECT_DIR$/src/Alpha/Alpha.java" />
+        <option value="$PROJECT_DIR$/src/Snake/Snake.java" />
       </list>
     </option>
   </component>
@@ -189,6 +185,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Snake-javafx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Snake-javafx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Food" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -598,12 +612,12 @@
       <workItem from="1495263198892" duration="26115000" />
       <workItem from="1495344866138" duration="6777000" />
       <workItem from="1495358617496" duration="4463000" />
-      <workItem from="1495379658065" duration="12189000" />
+      <workItem from="1495379658065" duration="14293000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80355000" />
+    <option name="totallyTimeSpent" value="82459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -620,14 +634,14 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20058565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16325037" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40059346" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31454006" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -676,10 +690,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Snake/Snake.java</url>
+          <line>191</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="42" />
+      <option name="time" value="44" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -713,15 +735,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding>
-            <element signature="docComment;class#Snake#0" expanded="false" />
-            <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
-            <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
-            <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-            <element signature="e#1912#1933#0" expanded="false" />
-            <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-            <element signature="e#10724#10752#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -973,15 +987,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1479">
           <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Snake#0" expanded="false" />
-            <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
-            <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
-            <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-            <element signature="e#1912#1933#0" expanded="false" />
-            <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-            <element signature="e#10724#10752#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1226,33 +1232,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-          <folding>
-            <element signature="docComment;class#Snake#0" expanded="false" />
-            <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
-            <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
-            <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-            <element signature="e#1760#1787#0" expanded="false" />
-            <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
-            <element signature="e#1912#1933#0" expanded="false" />
-            <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-            <element signature="method#updateSnake#0;class#Snake#0" expanded="false" />
-            <element signature="method#generateNewHeadNode#0;class#Snake#0" expanded="false" />
-            <element signature="method#generateNewNodeArtificialIntelligence#0;class#Snake#0" expanded="false" />
-            <element signature="method#isCollidingWithItSelf#0;class#Snake#0" expanded="false" />
-            <element signature="e#8447#8527#0" expanded="false" />
-            <element signature="method#hitsOtherSnake#0;class#Snake#0" expanded="false" />
-            <element signature="method#run#0;class#Snake#0" expanded="false" />
-            <element signature="e#10216#10289#0" expanded="false" />
-            <element signature="e#10724#10752#0" expanded="false" />
-            <marker date="1495396008109" expanded="false" signature="8016:8238" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -1276,9 +1255,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
+        <state relative-caret-position="595">
           <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="197" column="15" selection-start-line="197" selection-start-column="15" selection-end-line="197" selection-end-column="15" />
+          <folding>
+            <element signature="docComment;class#Snake#0" expanded="false" />
+            <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
+            <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
+            <element signature="method#Snake#0;class#Snake#0" expanded="false" />
+            <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
+            <element signature="e#1912#1933#0" expanded="false" />
+            <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
+            <element signature="method#generateNewHeadNode#0;class#Snake#0" expanded="false" />
+            <element signature="e#8089#8100#0" expanded="false" />
+            <element signature="e#8272#8300#0" expanded="false" />
+            <element signature="e#8652#8691#0" expanded="false" />
+            <element signature="e#9328#9354#0" expanded="false" />
+            <element signature="e#9562#9601#0" expanded="false" />
+            <element signature="e#10239#10268#0" expanded="false" />
+            <element signature="e#10477#10516#0" expanded="false" />
+            <element signature="e#11156#11184#0" expanded="false" />
+            <element signature="e#11394#11433#0" expanded="false" />
+            <element signature="method#ifSnakeCollided#0;class#Snake#0" expanded="false" />
+            <element signature="method#isCollidingWithItSelf#0;class#Snake#0" expanded="false" />
+            <element signature="e#12823#12903#0" expanded="false" />
+            <element signature="method#hitsOtherSnake#0;class#Snake#0" expanded="false" />
+            <element signature="method#isCollidingWithFood#0;class#Snake#0" expanded="false" />
+            <element signature="e#15144#15217#0" expanded="false" />
+            <element signature="e#15652#15680#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
