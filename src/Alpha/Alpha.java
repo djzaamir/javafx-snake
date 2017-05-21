@@ -94,6 +94,7 @@ public class Alpha extends Application{
         Thread event_handler_thread = new Thread(Parent_Input_Threaded_EventHandler);
         event_handler_thread.start();
 
+        //Snake no 2 update method is running is sperate thread
          Thread snk2 = new Thread(snake2);
          snk2.start();
 

@@ -30,16 +30,18 @@
       <file leaf-file-name="Alpha.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="127" column="26" selection-start-line="127" selection-start-column="26" selection-end-line="127" selection-end-column="26" />
+            <state relative-caret-position="317">
+              <caret line="96" column="63" selection-start-line="96" selection-start-column="63" selection-end-line="96" selection-end-column="63" />
               <folding>
                 <element signature="docComment;class#Alpha#0" expanded="false" />
                 <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
                 <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
                 <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
                 <element signature="e#2112#2147#0" expanded="false" />
-                <element signature="e#3682#3743#0" expanded="false" />
-                <element signature="e#5985#6032#0" expanded="false" />
+                <element signature="e#3746#3807#0" expanded="false" />
+                <element signature="e#4926#4944#0" expanded="false" />
+                <element signature="method#handle#0;class#4959:7829" expanded="false" />
+                <element signature="e#6049#6096#0" expanded="false" />
                 <element signature="method#main#0;class#Alpha#0" expanded="false" />
                 <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
                 <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -51,24 +53,24 @@
       <file leaf-file-name="Snake.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+            <state relative-caret-position="243">
+              <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#Snake#0" expanded="false" />
+                <element signature="n#!!doc;n#scales#0;n#Snake#0" expanded="false" />
                 <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
                 <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
                 <element signature="method#Snake#0;class#Snake#0" expanded="false" />
                 <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
-                <element signature="e#2397#2418#0" expanded="false" />
+                <element signature="e#1840#1861#0" expanded="false" />
                 <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-                <element signature="method#updateSnake#0;class#Snake#0" expanded="false" />
                 <element signature="method#generateNewHeadNode#0;class#Snake#0" expanded="false" />
-                <element signature="method#generateNewNodeArtificialIntelligence#0;class#Snake#0" expanded="false" />
                 <element signature="method#isCollidingWithItSelf#0;class#Snake#0" expanded="false" />
-                <element signature="e#8354#8434#0" expanded="false" />
+                <element signature="e#8375#8455#0" expanded="false" />
                 <element signature="method#hitsOtherSnake#0;class#Snake#0" expanded="false" />
-                <element signature="e#9773#9801#0" expanded="false" />
-                <marker date="1495392950829" expanded="false" signature="7963:8185" ph="{...}" />
+                <element signature="method#run#0;class#Snake#0" expanded="false" />
+                <element signature="e#10652#10680#0" expanded="false" />
+                <marker date="1495395336851" expanded="false" signature="7944:8166" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -103,8 +105,8 @@
         <option value="$PROJECT_DIR$/src/root_EventHandler_thread/root_Eventhandler_thread.java" />
         <option value="$PROJECT_DIR$/src/scale/Scale.java" />
         <option value="$PROJECT_DIR$/src/Food/Food.java" />
-        <option value="$PROJECT_DIR$/src/Alpha/Alpha.java" />
         <option value="$PROJECT_DIR$/src/Snake/Snake.java" />
+        <option value="$PROJECT_DIR$/src/Alpha/Alpha.java" />
       </list>
     </option>
   </component>
@@ -601,12 +603,12 @@
       <workItem from="1495263198892" duration="26115000" />
       <workItem from="1495344866138" duration="6777000" />
       <workItem from="1495358617496" duration="4463000" />
-      <workItem from="1495379658065" duration="8687000" />
+      <workItem from="1495379658065" duration="11103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76853000" />
+    <option name="totallyTimeSpent" value="79269000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -682,7 +684,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="39" />
+      <option name="time" value="40" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -701,8 +703,10 @@
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
             <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3682#3743#0" expanded="false" />
-            <element signature="e#5985#6032#0" expanded="false" />
+            <element signature="e#3746#3807#0" expanded="false" />
+            <element signature="e#4926#4944#0" expanded="false" />
+            <element signature="method#handle#0;class#4959:7829" expanded="false" />
+            <element signature="e#6049#6096#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -719,9 +723,9 @@
             <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
             <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
             <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-            <element signature="e#2397#2418#0" expanded="false" />
+            <element signature="e#1840#1861#0" expanded="false" />
             <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-            <element signature="e#9773#9801#0" expanded="false" />
+            <element signature="e#10652#10680#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -773,8 +777,10 @@
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
             <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3682#3743#0" expanded="false" />
-            <element signature="e#5985#6032#0" expanded="false" />
+            <element signature="e#3746#3807#0" expanded="false" />
+            <element signature="e#4926#4944#0" expanded="false" />
+            <element signature="method#handle#0;class#4959:7829" expanded="false" />
+            <element signature="e#6049#6096#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -802,8 +808,10 @@
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
             <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3682#3743#0" expanded="false" />
-            <element signature="e#5985#6032#0" expanded="false" />
+            <element signature="e#3746#3807#0" expanded="false" />
+            <element signature="e#4926#4944#0" expanded="false" />
+            <element signature="method#handle#0;class#4959:7829" expanded="false" />
+            <element signature="e#6049#6096#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -821,8 +829,10 @@
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
             <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3682#3743#0" expanded="false" />
-            <element signature="e#5985#6032#0" expanded="false" />
+            <element signature="e#3746#3807#0" expanded="false" />
+            <element signature="e#4926#4944#0" expanded="false" />
+            <element signature="method#handle#0;class#4959:7829" expanded="false" />
+            <element signature="e#6049#6096#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -983,9 +993,9 @@
             <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
             <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
             <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-            <element signature="e#2397#2418#0" expanded="false" />
+            <element signature="e#1840#1861#0" expanded="false" />
             <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-            <element signature="e#9773#9801#0" expanded="false" />
+            <element signature="e#10652#10680#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1261,16 +1271,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="127" column="26" selection-start-line="127" selection-start-column="26" selection-end-line="127" selection-end-column="26" />
+        <state relative-caret-position="317">
+          <caret line="96" column="63" selection-start-line="96" selection-start-column="63" selection-end-line="96" selection-end-column="63" />
           <folding>
             <element signature="docComment;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
             <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3682#3743#0" expanded="false" />
-            <element signature="e#5985#6032#0" expanded="false" />
+            <element signature="e#3746#3807#0" expanded="false" />
+            <element signature="e#4926#4944#0" expanded="false" />
+            <element signature="method#handle#0;class#4959:7829" expanded="false" />
+            <element signature="e#6049#6096#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -1280,24 +1292,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+        <state relative-caret-position="243">
+          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Snake#0" expanded="false" />
+            <element signature="n#!!doc;n#scales#0;n#Snake#0" expanded="false" />
             <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
             <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
             <element signature="method#Snake#0;class#Snake#0" expanded="false" />
             <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
-            <element signature="e#2397#2418#0" expanded="false" />
+            <element signature="e#1840#1861#0" expanded="false" />
             <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-            <element signature="method#updateSnake#0;class#Snake#0" expanded="false" />
             <element signature="method#generateNewHeadNode#0;class#Snake#0" expanded="false" />
-            <element signature="method#generateNewNodeArtificialIntelligence#0;class#Snake#0" expanded="false" />
             <element signature="method#isCollidingWithItSelf#0;class#Snake#0" expanded="false" />
-            <element signature="e#8354#8434#0" expanded="false" />
+            <element signature="e#8375#8455#0" expanded="false" />
             <element signature="method#hitsOtherSnake#0;class#Snake#0" expanded="false" />
-            <element signature="e#9773#9801#0" expanded="false" />
-            <marker date="1495392950829" expanded="false" signature="7963:8185" ph="{...}" />
+            <element signature="method#run#0;class#Snake#0" expanded="false" />
+            <element signature="e#10652#10680#0" expanded="false" />
+            <marker date="1495395336851" expanded="false" signature="7944:8166" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -21,28 +21,8 @@ public class Snake  implements  Runnable{
       private boolean artificial_inteligence;
       private int center_x , center_y , radius;
       private int timerCountToAddScale = 0; //for ai to automatically add new scale
-    @Override
-    public void run() {
-        while (true){
-            try {
-                this.updateSnake();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            try {
-                this.timerCountToAddScale++;
-                if (this.timerCountToAddScale == 15){ //then it means Required time 10 seconds have been elplashed add new scale
-                    this.timerCountToAddScale = 0;
-                    this.addTrailingScale();
-                }
-                Thread.sleep(333);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-    public enum DIRECTION  {LEFT , RIGHT , UP , DOWN };
+      private int timerCountToChangeDirection = 0; //for ai to automatically pick random direction for snake
+      public enum DIRECTION  {LEFT , RIGHT , UP , DOWN };
       private DIRECTION snake_direction;
       private int movement_offet = 10;
       private int score = 0;
@@ -114,7 +94,7 @@ public class Snake  implements  Runnable{
 
     public void updateSnake() throws InterruptedException {
 
-           /*AlGARETH
+           /*AlGORITHM
            * Update all nodes to the cords of next node
            * Finally update the Head node to new Cords
            * */
@@ -141,11 +121,9 @@ public class Snake  implements  Runnable{
             //Generate New Head node based on user input , and while doing so do handle self collision
             if (!this.artificial_inteligence){  //Works on user input
                 generateNewHeadNode();
-            }else{  //Genrates snake direction based on some algorithm
-
-                //generateNewNodeArtificialIntelligence();
-                generateNewHeadNode();
-
+            }else{
+                //Generates snake direction based on some algorithm
+                generateNewNodeArtificialIntelligence();
             }
 
 
@@ -208,9 +186,26 @@ public class Snake  implements  Runnable{
 
     //Artificial Intelligence function , to control snake automatically
     private void generateNewNodeArtificialIntelligence(){
+      if (this.timerCountToChangeDirection == 6){//this will turn on after adding three consecutive scales
+          this.timerCountToChangeDirection = 0;
 
+          /*
+          * This function should generate new Scale for computer snake which satisfies the following
+          * Shouldnt be placed at the following
+          *     => Close to food
+          *     => Close to itself
+          *     => Close to User_snake
+          * */
+
+
+
+
+      }
     }
 
+
+    //This function is to change all scales color in case of collision ,
+    //However its not working properly
     private void ifSnakeCollided(boolean colliding) {
         if (colliding){
             for (Scale scale : this.scales){
@@ -221,6 +216,7 @@ public class Snake  implements  Runnable{
         }
     }
 
+    //Self collision detection function
     public boolean isCollidingWithItSelf(int x , int y){
 
         int hit_proximity = 16;  //This is distance , after which the snake is collided with itself
@@ -239,6 +235,7 @@ public class Snake  implements  Runnable{
         return false;
     }
 
+    //TO detect collision with other snake
     public void hitsOtherSnake(Snake snake2) {
 
         int hit_proximity = 20;
@@ -256,6 +253,30 @@ public class Snake  implements  Runnable{
 
         }
 
+    }
+
+    @Override
+    public void run() {
+        while (true){
+            try {
+                this.updateSnake();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            try {
+                this.timerCountToAddScale++;
+                if (this.timerCountToAddScale == 15){ //then it means Required time 5 seconds have been elplashed add new scale
+                    //Scale adding mechanism
+                    this.timerCountToAddScale = 0;
+                    this.addTrailingScale();
+                }
+                //Direction change Timer Mechanism
+                this.timerCountToChangeDirection++;
+                Thread.sleep(333);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     //endregion
