@@ -60,10 +60,10 @@ public class Scale {
         }else if (this.loc_x <= -5){
             this.loc_x = this.window_width;
 
-        }else if(this.loc_y >= this.window_height - offet_from_border){
+        }else if(this.loc_y >= this.window_height - offet_from_border-1){
             this.loc_y = offet_from_border;
 
-        }else if(this.loc_y <= offet_from_border){
+        }else if(this.loc_y <= offet_from_border+2){
             this.loc_y = this.window_height;
         }
     }

@@ -50,7 +50,7 @@ public class Alpha extends Application{
     //region Constructer
     public Alpha() {
         //initializing vars
-        snake =  new Snake(Color.RED,window_width , window_height,initial_scale,false);
+        snake =  new Snake(Color.ORANGE,window_width , window_height,initial_scale,false);
         snake.initSnake(1200,600);
         food =  new Food(window_width , window_height ,  Color.WHEAT);
         initComponents(); //This function will initialize all the local VARS for this Alpha class
@@ -60,8 +60,6 @@ public class Alpha extends Application{
     @Override
     //Entry point for javaFx framework
     public void start(Stage primaryStage) throws Exception {
-
-
 
         //region Main Setup , look and feel
         //Setting up basic attributes for Stag
@@ -132,10 +130,7 @@ public class Alpha extends Application{
 
                     gc.clearRect(0 , 0 , window_width , window_height);
                     snake.updateSnake();
-                    if (!snake.isAlive()){
-                        this.stop();
-                        JOptionPane.showMessageDialog(null , "Game Over Dude!");
-                    }
+
                     food.handleFoodCollision(snakes);
 
                     //Now redrawing stuff to the screen
@@ -144,6 +139,10 @@ public class Alpha extends Application{
                         scale.initScale(); //initialize the scale object , this is necessary because of the internal Implementation of Scale Object
                         root.getChildren().add(scale.getScale()); //Adding to the Content-Pane(Group) , to Group and not vbox because vbox doesnt allow
                         // location override of elements , on the other hand Group does
+                    }
+                    if (!snake.isAlive()){
+                        this.stop();
+                        JOptionPane.showMessageDialog(null , "Game Over Dude! \n You Have Score :"+snake.getScore() + " Points");
                     }
 
 

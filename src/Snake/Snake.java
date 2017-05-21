@@ -124,6 +124,10 @@ public class Snake {
 
                    //Handling self collision based on results
                    if (colliding){
+                       for (Scale scale : this.scales){
+                           scale.getScale().setFill(Color.RED);
+                           scale.initScale();
+                       }
                        this.isAlive = false;
                    }
 
@@ -136,6 +140,10 @@ public class Snake {
                    colliding =  isCollidingWithItSelf(to_check.getLoc_x(), to_check.getLoc_y()-this.radius-this.movement_offet); //Performing self collision detection
                    this.scales.get(0).setLoc_y(head.getLoc_y()-this.radius-this.movement_offet);
                    if (colliding){
+                       for (Scale scale : this.scales){
+                           scale.getScale().setFill(Color.RED);
+                           scale.initScale();
+                       }
                        this.isAlive = false;
                    }
                    this.scales.get(0).isScaleHittingAnyWall();
@@ -147,6 +155,10 @@ public class Snake {
                    this.scales.get(0).setLoc_x(head.getLoc_x()+this.radius+this.movement_offet);
                    //Handling self collision based on results
                     if (colliding){
+                        for (Scale scale : this.scales){
+                            scale.getScale().setFill(Color.RED);
+                            scale.initScale();
+                        }
                        this.isAlive = false;
                     }
                    this.scales.get(0).isScaleHittingAnyWall();
@@ -156,6 +168,10 @@ public class Snake {
                    colliding =  isCollidingWithItSelf(to_check.getLoc_x(), to_check.getLoc_y()+this.radius+this.movement_offet); //Performing self collision detection
                    this.scales.get(0).setLoc_y(head.getLoc_y()+this.radius+this.movement_offet);
                    if (colliding){
+                       for (Scale scale : this.scales){
+                           scale.getScale().setFill(Color.RED);
+                           scale.initScale();
+                       }
                        this.isAlive = false;
                    }
                    this.scales.get(0).isScaleHittingAnyWall();

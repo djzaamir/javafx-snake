@@ -56,7 +56,7 @@ public class Food {
                 int height = 0;
                 while(!height_good){
                     height = new Random().nextInt(window_height);
-                    height_good = height > offset_from_border ? true:false;
+                    height_good = height > offset_from_border && height < window_height-offset_from_border? true:false;
                 }
                 cords =  new Cords(new Random().nextInt(window_width-offset_from_border) ,  height);
 
