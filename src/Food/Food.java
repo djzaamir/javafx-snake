@@ -88,10 +88,22 @@ public class Food {
         * At most two snakes will past into this function
         * The first one will Be User snake
         * And the second one will be Computer controlled snake
-        * if any of them hits the food
+        * if any of them hitsOtherSnake the food
         * Score card of that snake will be incremented by 1
         * And new Random Location for snake will be choosen
         * */
+
+        //little code to animate food , but the animation doesn't look very good
+       /* if (this.w_l == 16){
+            this.w_l = 19;
+            this.food.setX(w_l);
+            this.food.setY(w_l);
+        }else{
+            this.w_l = 16;
+            this.food.setX(w_l);
+            this.food.setY(w_l);
+        }*/
+
         Point2D food_vector = new Point2D.Double(food_loc_x , food_loc_y);
         for(Snake snake : snakes){
             for(scale.Scale scale : snake.getScales()){
@@ -99,9 +111,6 @@ public class Food {
                 //Calculating Euclidean Distance (Pythagoras theorem)
                 Point2D scale_vector = new Point2D.Double(scale.getLoc_x() , scale.getLoc_y());
                 int dist = (int) food_vector.distance(scale_vector);
-                System.out.println(dist);
-
-
                 if (dist < 16){
                     //This means that the food is being hit
                     snake.setScore(snake.getScore()+1); //update the score of relevant snake

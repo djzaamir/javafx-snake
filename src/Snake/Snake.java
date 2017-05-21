@@ -6,11 +6,12 @@ import scale.Scale;
 import java.awt.geom.Point2D;
 import java.security.SecureClassLoader;
 import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by Aamir on 5/19/2017.
  */
-public class Snake {
+public class Snake  implements  Runnable{
 
     //region VARS
       private ArrayList<Scale> scales;
@@ -19,7 +20,29 @@ public class Snake {
       private Color color;
       private boolean artificial_inteligence;
       private int center_x , center_y , radius;
-      public enum DIRECTION  {LEFT , RIGHT , UP , DOWN };
+      private int timerCountToAddScale = 0; //for ai to automatically add new scale
+    @Override
+    public void run() {
+        while (true){
+            try {
+                this.updateSnake();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            try {
+                this.timerCountToAddScale++;
+                if (this.timerCountToAddScale == 15){ //then it means Required time 10 seconds have been elplashed add new scale
+                    this.timerCountToAddScale = 0;
+                    this.addTrailingScale();
+                }
+                Thread.sleep(333);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public enum DIRECTION  {LEFT , RIGHT , UP , DOWN };
       private DIRECTION snake_direction;
       private int movement_offet = 10;
       private int score = 0;
@@ -58,8 +81,13 @@ public class Snake {
                    new_scale.setCenter_x(center_x);
                    new_scale.setCenter_y(center_y);
                    new_scale.setRadius(radius);
-                   new_scale.setLoc_x(w / 2);
-                   new_scale.setLoc_y(h / 2);
+                   if (!this.artificial_inteligence){
+                       new_scale.setLoc_x(w / 2);
+                       new_scale.setLoc_y(h / 2);
+                   }else{
+                       new_scale.setLoc_x(w / 3);
+                       new_scale.setLoc_y(h / 3);
+                   }
                    //finally add it to the list
                    this.scales.add(new_scale);
 
@@ -84,7 +112,7 @@ public class Snake {
         this.scales.add(new_scale);
     }
 
-    public void updateSnake(){
+    public void updateSnake() throws InterruptedException {
 
            /*AlGARETH
            * Update all nodes to the cords of next node
@@ -110,77 +138,88 @@ public class Snake {
 
            }
 
+            //Generate New Head node based on user input , and while doing so do handle self collision
+            if (!this.artificial_inteligence){  //Works on user input
+                generateNewHeadNode();
+            }else{  //Genrates snake direction based on some algorithm
 
-           //Now updating head node at the very END of algorithm
-           Scale head = this.scales.get(0); //this is the head node index in array
-           Scale to_check =  this.scales.get(0);
-           boolean  colliding = false;
-           switch (snake_direction){
-               case LEFT:
-                   //Decrement X-axis
+                //generateNewNodeArtificialIntelligence();
+                generateNewHeadNode();
 
-                   colliding =  isCollidingWithItSelf(to_check.getLoc_x()-this.radius-this.movement_offet, to_check.getLoc_y()); //Performing self collision detection
-                   this.scales.get(0).setLoc_x(head.getLoc_x()-this.radius-this.movement_offet); //Assign new cords
-
-                   //Handling self collision based on results
-                   if (colliding){
-                       for (Scale scale : this.scales){
-                           scale.getScale().setFill(Color.RED);
-                           scale.initScale();
-                       }
-                       this.isAlive = false;
-                   }
-
-                   this.scales.get(0).isScaleHittingAnyWall();  //Wall hit handling
-                   break;
-               case UP:
-                   //Decrement Y-axis
+            }
 
 
-                   colliding =  isCollidingWithItSelf(to_check.getLoc_x(), to_check.getLoc_y()-this.radius-this.movement_offet); //Performing self collision detection
-                   this.scales.get(0).setLoc_y(head.getLoc_y()-this.radius-this.movement_offet);
-                   if (colliding){
-                       for (Scale scale : this.scales){
-                           scale.getScale().setFill(Color.RED);
-                           scale.initScale();
-                       }
-                       this.isAlive = false;
-                   }
-                   this.scales.get(0).isScaleHittingAnyWall();
-                   break;
-               case RIGHT:
-                   //Increment X-axis
-
-                   colliding =  isCollidingWithItSelf(to_check.getLoc_x()+this.radius+this.movement_offet, to_check.getLoc_y()); //Performing self collision detection
-                   this.scales.get(0).setLoc_x(head.getLoc_x()+this.radius+this.movement_offet);
-                   //Handling self collision based on results
-                    if (colliding){
-                        for (Scale scale : this.scales){
-                            scale.getScale().setFill(Color.RED);
-                            scale.initScale();
-                        }
-                       this.isAlive = false;
-                    }
-                   this.scales.get(0).isScaleHittingAnyWall();
-                   break;
-               case DOWN:
-                   //Increment Y-axis
-                   colliding =  isCollidingWithItSelf(to_check.getLoc_x(), to_check.getLoc_y()+this.radius+this.movement_offet); //Performing self collision detection
-                   this.scales.get(0).setLoc_y(head.getLoc_y()+this.radius+this.movement_offet);
-                   if (colliding){
-                       for (Scale scale : this.scales){
-                           scale.getScale().setFill(Color.RED);
-                           scale.initScale();
-                       }
-                       this.isAlive = false;
-                   }
-                   this.scales.get(0).isScaleHittingAnyWall();
-                   break;
-               default:
-                   //Dont do anything here
-                   break;
-           }
        }
+
+    //This function generates new head node , based on user input
+    //Handle self collision
+    private void generateNewHeadNode() {
+        //Now updating head node at the very END of algorithm
+        Scale head = this.scales.get(0); //this is the head node index in array
+        Scale to_check =  this.scales.get(0);
+        boolean  colliding = false;
+        switch (snake_direction){
+            case LEFT:
+                //Decrement X-axis
+
+                colliding =  isCollidingWithItSelf(to_check.getLoc_x()-this.radius-this.movement_offet, to_check.getLoc_y()); //Performing self collision detection
+                this.scales.get(0).setLoc_x(head.getLoc_x()-this.radius-this.movement_offet); //Assign new cords
+
+                //Handling self collision based on results
+                ifSnakeCollided(colliding);
+
+                this.scales.get(0).isScaleHittingAnyWall();  //Wall hit handling
+                break;
+            case UP:
+                //Decrement Y-axis
+
+
+                colliding =  isCollidingWithItSelf(to_check.getLoc_x(), to_check.getLoc_y()-this.radius-this.movement_offet); //Performing self collision detection
+                this.scales.get(0).setLoc_y(head.getLoc_y()-this.radius-this.movement_offet);
+
+                //Handling collision based on results
+                ifSnakeCollided(colliding);
+                this.scales.get(0).isScaleHittingAnyWall();
+                break;
+            case RIGHT:
+                //Increment X-axis
+
+                colliding =  isCollidingWithItSelf(to_check.getLoc_x()+this.radius+this.movement_offet, to_check.getLoc_y()); //Performing self collision detection
+                this.scales.get(0).setLoc_x(head.getLoc_x()+this.radius+this.movement_offet);
+
+                //Handling self collision based on results
+                ifSnakeCollided(colliding);
+                this.scales.get(0).isScaleHittingAnyWall();
+                break;
+            case DOWN:
+                //Increment Y-axis
+                colliding =  isCollidingWithItSelf(to_check.getLoc_x(), to_check.getLoc_y()+this.radius+this.movement_offet); //Performing self collision detection
+                this.scales.get(0).setLoc_y(head.getLoc_y()+this.radius+this.movement_offet);
+
+                //Handling self collision based on results
+                ifSnakeCollided(colliding);
+                this.scales.get(0).isScaleHittingAnyWall();
+                break;
+            default:
+                //Dont do anything here
+                break;
+        }
+    }
+
+    //Artificial Intelligence function , to control snake automatically
+    private void generateNewNodeArtificialIntelligence(){
+
+    }
+
+    private void ifSnakeCollided(boolean colliding) {
+        if (colliding){
+            for (Scale scale : this.scales){
+                scale.getScale().setFill(Color.RED);
+                scale.initScale();
+            }
+            this.isAlive = false;
+        }
+    }
 
     public boolean isCollidingWithItSelf(int x , int y){
 
@@ -198,6 +237,25 @@ public class Snake {
         }
         //Return false , because no scale was too close
         return false;
+    }
+
+    public void hitsOtherSnake(Snake snake2) {
+
+        int hit_proximity = 20;
+        /*
+        * We will check the head node of this snake(User snake) , that weather or not its hitting any part of other snake (Computer-Snake)
+        * */
+        Point2D user_headnode_vector = new Point2D.Double(this.scales.get(0).getLoc_x() , this.scales.get(0).getLoc_y());
+        for(Scale scale : snake2.getScales()){
+            Point2D computer_headnode_vector = new Point2D.Double(scale.getLoc_x() ,scale.getLoc_y());
+            int dist = (int)user_headnode_vector.distance(computer_headnode_vector);
+            if (dist < hit_proximity){
+               this.isAlive = false;
+                break;
+            }
+
+        }
+
     }
 
     //endregion

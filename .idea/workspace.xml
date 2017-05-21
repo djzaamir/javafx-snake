@@ -27,16 +27,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Alpha.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Alpha.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state relative-caret-position="131">
+              <caret line="127" column="26" selection-start-line="127" selection-start-column="26" selection-end-line="127" selection-end-column="26" />
               <folding>
                 <element signature="docComment;class#Alpha#0" expanded="false" />
                 <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
-                <element signature="e#3164#3213#0" expanded="false" />
-                <element signature="e#3490#3551#0" expanded="false" />
+                <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
+                <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+                <element signature="e#2112#2147#0" expanded="false" />
+                <element signature="e#3682#3743#0" expanded="false" />
+                <element signature="e#5985#6032#0" expanded="false" />
                 <element signature="method#main#0;class#Alpha#0" expanded="false" />
                 <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
                 <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -45,44 +48,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Snake.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Snake.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="177" column="25" selection-start-line="177" selection-start-column="25" selection-end-line="177" selection-end-column="25" />
+            <state relative-caret-position="238">
+              <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
               <folding>
                 <element signature="docComment;class#Snake#0" expanded="false" />
                 <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
                 <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
                 <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-                <element signature="e#1601#1622#0" expanded="false" />
+                <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
+                <element signature="e#2397#2418#0" expanded="false" />
                 <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-                <element signature="e#8040#8068#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scale.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
-              <folding>
-                <element signature="docComment;class#Scale#0" expanded="false" />
-                <element signature="e#2205#2233#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Food.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Food/Food.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="58" column="106" selection-start-line="58" selection-start-column="106" selection-end-line="58" selection-end-column="106" />
-              <folding>
-                <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
+                <element signature="method#updateSnake#0;class#Snake#0" expanded="false" />
+                <element signature="method#generateNewHeadNode#0;class#Snake#0" expanded="false" />
+                <element signature="method#generateNewNodeArtificialIntelligence#0;class#Snake#0" expanded="false" />
+                <element signature="method#isCollidingWithItSelf#0;class#Snake#0" expanded="false" />
+                <element signature="e#8354#8434#0" expanded="false" />
+                <element signature="method#hitsOtherSnake#0;class#Snake#0" expanded="false" />
+                <element signature="e#9773#9801#0" expanded="false" />
+                <marker date="1495392950829" expanded="false" signature="7963:8185" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -115,10 +101,10 @@
         <option value="$PROJECT_DIR$/src/Food/Cords.java" />
         <option value="$PROJECT_DIR$/src/Menu_Actions/Menu_Actions.java" />
         <option value="$PROJECT_DIR$/src/root_EventHandler_thread/root_Eventhandler_thread.java" />
-        <option value="$PROJECT_DIR$/src/Food/Food.java" />
         <option value="$PROJECT_DIR$/src/scale/Scale.java" />
-        <option value="$PROJECT_DIR$/src/Snake/Snake.java" />
+        <option value="$PROJECT_DIR$/src/Food/Food.java" />
         <option value="$PROJECT_DIR$/src/Alpha/Alpha.java" />
+        <option value="$PROJECT_DIR$/src/Snake/Snake.java" />
       </list>
     </option>
   </component>
@@ -159,9 +145,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -212,48 +195,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snake-javafx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snake-javafx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Food" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Food" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snake-javafx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snake-javafx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Food" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,6 +208,9 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Aamir/IdeaProjects/Snake-javafx/src/Food/Cords.java" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager" selected="Application.Alpha">
     <configuration default="false" name="Alpha" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -651,12 +600,13 @@
       <workItem from="1495179943399" duration="30811000" />
       <workItem from="1495263198892" duration="26115000" />
       <workItem from="1495344866138" duration="6777000" />
-      <workItem from="1495358617496" duration="3480000" />
+      <workItem from="1495358617496" duration="4463000" />
+      <workItem from="1495379658065" duration="8687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67183000" />
+    <option name="totallyTimeSpent" value="76853000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -675,6 +625,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20058565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -686,7 +637,6 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -732,7 +682,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="37" />
+      <option name="time" value="39" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -743,13 +693,88 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Alpha#0" expanded="false" />
+            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
+            <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
+            <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2112#2147#0" expanded="false" />
+            <element signature="e#3682#3743#0" expanded="false" />
+            <element signature="e#5985#6032#0" expanded="false" />
+            <element signature="method#main#0;class#Alpha#0" expanded="false" />
+            <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
+            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding>
+            <element signature="docComment;class#Snake#0" expanded="false" />
+            <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
+            <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
+            <element signature="method#Snake#0;class#Snake#0" expanded="false" />
+            <element signature="e#2397#2418#0" expanded="false" />
+            <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
+            <element signature="e#9773#9801#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+          <folding>
+            <element signature="docComment;class#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#scale#0;n#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#Scale#0;n#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#initScale#0;n#Scale#0" expanded="false" />
+            <element signature="method#initScale#0;class#Scale#0" expanded="false" />
+            <element signature="method#updateScale#0;class#Scale#0" expanded="false" />
+            <element signature="e#1423#1480#0" expanded="false" />
+            <element signature="method#isScaleHittingAnyWall#0;class#Scale#0" expanded="false" />
+            <element signature="e#2205#2233#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Food/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Food#0" expanded="false" />
+            <element signature="n#!!doc;n#food#0;n#Food#0" expanded="false" />
+            <element signature="n#!!doc;n#Food#0;n#Food#0" expanded="false" />
+            <element signature="method#Food#0;class#Food#0" expanded="false" />
+            <element signature="n#!!doc;n#initFood#0;n#Food#0" expanded="false" />
+            <element signature="method#initFood#0;class#Food#0" expanded="false" />
+            <element signature="method#getLocationForFood#0;class#Food#0" expanded="false" />
+            <element signature="e#1958#1994#0" expanded="false" />
+            <element signature="method#handleFoodCollision#0;class#Food#0" expanded="false" />
+            <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1802">
           <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
-            <element signature="e#3164#3213#0" expanded="false" />
-            <element signature="e#3490#3551#0" expanded="false" />
+            <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
+            <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2112#2147#0" expanded="false" />
+            <element signature="e#3682#3743#0" expanded="false" />
+            <element signature="e#5985#6032#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -762,7 +787,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -774,8 +799,11 @@
           <folding>
             <element signature="docComment;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
-            <element signature="e#3164#3213#0" expanded="false" />
-            <element signature="e#3490#3551#0" expanded="false" />
+            <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
+            <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2112#2147#0" expanded="false" />
+            <element signature="e#3682#3743#0" expanded="false" />
+            <element signature="e#5985#6032#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -790,8 +818,11 @@
           <folding>
             <element signature="docComment;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
-            <element signature="e#3164#3213#0" expanded="false" />
-            <element signature="e#3490#3551#0" expanded="false" />
+            <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
+            <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2112#2147#0" expanded="false" />
+            <element signature="e#3682#3743#0" expanded="false" />
+            <element signature="e#5985#6032#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -952,9 +983,9 @@
             <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
             <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
             <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-            <element signature="e#1601#1622#0" expanded="false" />
+            <element signature="e#2397#2418#0" expanded="false" />
             <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-            <element signature="e#8040#8068#0" expanded="false" />
+            <element signature="e#9773#9801#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -965,6 +996,13 @@
           <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
           <folding>
             <element signature="docComment;class#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#scale#0;n#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#Scale#0;n#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#initScale#0;n#Scale#0" expanded="false" />
+            <element signature="method#initScale#0;class#Scale#0" expanded="false" />
+            <element signature="method#updateScale#0;class#Scale#0" expanded="false" />
+            <element signature="e#1423#1480#0" expanded="false" />
+            <element signature="method#isScaleHittingAnyWall#0;class#Scale#0" expanded="false" />
             <element signature="e#2205#2233#0" expanded="false" />
           </folding>
         </state>
@@ -1176,21 +1214,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/root_EventHandler_thread/root_Eventhandler_thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="73" column="51" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Food/Food.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="58" column="106" selection-start-line="58" selection-start-column="106" selection-end-line="58" selection-end-column="106" />
+        <state relative-caret-position="221">
+          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
           <folding>
+            <element signature="docComment;class#Food#0" expanded="false" />
+            <element signature="n#!!doc;n#food#0;n#Food#0" expanded="false" />
+            <element signature="n#!!doc;n#Food#0;n#Food#0" expanded="false" />
+            <element signature="method#Food#0;class#Food#0" expanded="false" />
+            <element signature="n#!!doc;n#initFood#0;n#Food#0" expanded="false" />
+            <element signature="method#initFood#0;class#Food#0" expanded="false" />
+            <element signature="method#getLocationForFood#0;class#Food#0" expanded="false" />
+            <element signature="e#1958#1994#0" expanded="false" />
+            <element signature="method#handleFoodCollision#0;class#Food#0" expanded="false" />
             <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
           </folding>
         </state>
@@ -1198,40 +1235,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+        <state relative-caret-position="204">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#scale#0;n#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#Scale#0;n#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#initScale#0;n#Scale#0" expanded="false" />
+            <element signature="method#initScale#0;class#Scale#0" expanded="false" />
+            <element signature="method#updateScale#0;class#Scale#0" expanded="false" />
+            <element signature="e#1423#1480#0" expanded="false" />
+            <element signature="method#isScaleHittingAnyWall#0;class#Scale#0" expanded="false" />
             <element signature="e#2205#2233#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
+    <entry file="file://$PROJECT_DIR$/src/root_EventHandler_thread/root_Eventhandler_thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="177" column="25" selection-start-line="177" selection-start-column="25" selection-end-line="177" selection-end-column="25" />
-          <folding>
-            <element signature="docComment;class#Snake#0" expanded="false" />
-            <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
-            <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
-            <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-            <element signature="e#1601#1622#0" expanded="false" />
-            <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-            <element signature="e#8040#8068#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state relative-caret-position="131">
+          <caret line="127" column="26" selection-start-line="127" selection-start-column="26" selection-end-line="127" selection-end-column="26" />
           <folding>
             <element signature="docComment;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
-            <element signature="e#3164#3213#0" expanded="false" />
-            <element signature="e#3490#3551#0" expanded="false" />
+            <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
+            <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2112#2147#0" expanded="false" />
+            <element signature="e#3682#3743#0" expanded="false" />
+            <element signature="e#5985#6032#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -1239,5 +1278,104 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+          <folding>
+            <element signature="docComment;class#Snake#0" expanded="false" />
+            <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
+            <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
+            <element signature="method#Snake#0;class#Snake#0" expanded="false" />
+            <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
+            <element signature="e#2397#2418#0" expanded="false" />
+            <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
+            <element signature="method#updateSnake#0;class#Snake#0" expanded="false" />
+            <element signature="method#generateNewHeadNode#0;class#Snake#0" expanded="false" />
+            <element signature="method#generateNewNodeArtificialIntelligence#0;class#Snake#0" expanded="false" />
+            <element signature="method#isCollidingWithItSelf#0;class#Snake#0" expanded="false" />
+            <element signature="e#8354#8434#0" expanded="false" />
+            <element signature="method#hitsOtherSnake#0;class#Snake#0" expanded="false" />
+            <element signature="e#9773#9801#0" expanded="false" />
+            <marker date="1495392950829" expanded="false" signature="7963:8185" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Snake-javafx</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

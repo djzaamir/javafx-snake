@@ -1,10 +1,7 @@
 package Alpha;
 import Food.Food;
-import Menu_Actions.Menu_Actions;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
@@ -12,7 +9,6 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -37,7 +33,7 @@ public class Alpha extends Application{
 
 
     //region VARS
-    private Snake snake;
+    private Snake snake ,  snake2;
     private Food food;
     private MenuBar menubar;
     private Menu file ,  view  , Help;
@@ -51,7 +47,9 @@ public class Alpha extends Application{
     public Alpha() {
         //initializing vars
         snake =  new Snake(Color.ORANGE,window_width , window_height,initial_scale,false);
-        snake.initSnake(1200,600);
+        snake2 =  new Snake(Color.RED , window_width , window_height , initial_scale ,true);
+        snake.initSnake(window_width,window_height);
+        snake2.initSnake(window_width , window_height);
         food =  new Food(window_width , window_height ,  Color.WHEAT);
         initComponents(); //This function will initialize all the local VARS for this Alpha class
     }
@@ -89,26 +87,36 @@ public class Alpha extends Application{
         root.getChildren().add(holder);
         //endregion
 
-        //region Event Handler's For input And Menu items
+        //region Event Handler's  and THREADS For input And Menu items
 
 
-        root_Eventhandler_thread Parent_Input_Threaded_EventHandler = new root_Eventhandler_thread(snake,scene,About);
+        root_Eventhandler_thread Parent_Input_Threaded_EventHandler = new root_Eventhandler_thread(snake,scene,About);//snake is passed in because we need Key ENUMS present inside snake class
         Thread event_handler_thread = new Thread(Parent_Input_Threaded_EventHandler);
         event_handler_thread.start();
 
+         Thread snk2 = new Thread(snake2);
+         snk2.start();
 
         //endregion
 
         //region Injecting My Game Look And feel into the Environment
 
+          //User-Snake
           for(Scale scale : snake.getScales()){
               scale.initScale(); //initialize the scale object , this is necessary because of the internal Implementation of Scale Object
               root.getChildren().add(scale.getScale()); //Adding to the Content-Pane(Group) , to Group and not vbox because vbox doesnt allow
                                                         // location override of elements , on the other hand Group does
           }
 
+          //Snake-2
+          for(Scale scale : snake2.getScales()){
+            scale.initScale(); //initialize the scale object , this is necessary because of the internal Implementation of Scale Object
+            root.getChildren().add(scale.getScale()); //Adding to the Content-Pane(Group) , to Group and not vbox because vbox doesnt allow
+            // location override of elements , on the other hand Group does
+          }
+
            //Initiating food here
-            Snake[] snakes = {snake};
+            Snake[] snakes = {snake ,  snake2};
             food.initFood(snakes);
             root.getChildren().add(food.getFood());
 
@@ -122,24 +130,48 @@ public class Alpha extends Application{
                 long lastUpdate = 0;
                 if (now - lastUpdate >= 28_000_0000) {
 
-                    //clearing the canvas
+                    //clearing the canvas , removing both snakes from screen
                     for(Scale scale : snake.getScales()){
                         root.getChildren().remove(scale.getScale());
                     }
+                    for(Scale scale : snake2.getScales()){
+                        root.getChildren().remove(scale.getScale());
+                    }
+
+                  //Do not update coordinates
+                    if (snake.isAlive()){
+                        gc.clearRect(0 , 0 , window_width , window_height);
+
+                        try {
+                            snake.updateSnake();
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+
+                        snake.hitsOtherSnake(snake2);
+                        food.handleFoodCollision(snakes);
+                    }
 
 
-                    gc.clearRect(0 , 0 , window_width , window_height);
-                    snake.updateSnake();
-
-                    food.handleFoodCollision(snakes);
-
-                    //Now redrawing stuff to the screen
-
+                    //Now redrawing stuff both snakes to the screen
+                    //User-Snake
                     for(Scale scale : snake.getScales()){
                         scale.initScale(); //initialize the scale object , this is necessary because of the internal Implementation of Scale Object
                         root.getChildren().add(scale.getScale()); //Adding to the Content-Pane(Group) , to Group and not vbox because vbox doesnt allow
                         // location override of elements , on the other hand Group does
                     }
+                    //Snake-2
+                    for(Scale scale : snake2.getScales()){
+                        scale.initScale(); //initialize the scale object , this is necessary because of the internal Implementation of Scale Object
+                        root.getChildren().add(scale.getScale()); //Adding to the Content-Pane(Group) , to Group and not vbox because vbox doesnt allow
+                        // location override of elements , on the other hand Group does
+                    }
+
+
+
+
+
+                    //If user snake is not alive
                     if (!snake.isAlive()){
                         this.stop();
                         JOptionPane.showMessageDialog(null , "Game Over Dude! \n You Have Score :"+snake.getScore() + " Points");
@@ -154,10 +186,7 @@ public class Alpha extends Application{
                     }
                     lastUpdate = now;
 
-
                 }
-
-
             }
 
         }.start();
@@ -166,7 +195,6 @@ public class Alpha extends Application{
 
         primaryStage.show(); //Showing up the application
         }
-
 
 
 
