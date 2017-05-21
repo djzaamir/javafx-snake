@@ -95,7 +95,11 @@ public class Alpha extends Application{
         event_handler_thread.start();
 
         //Snake no 2 update method is running is sperate thread
-         Thread snk2 = new Thread(snake2);
+        //Also before starting the thread we are going to pass the food and user snake object as well to computer snake
+        snake2.setFood(food);
+        snake2.setUser_snake(snake);
+        //Now seperating from Main thread
+        Thread snk2 = new Thread(snake2);
          snk2.start();
 
         //endregion

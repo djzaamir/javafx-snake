@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/scale/Scale.java" line="31" />
-    <bookmark url="file://$PROJECT_DIR$/src/scale/Scale.java" description="The block of code is not working as it should be" line="40" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/src/scale/Scale.java" description="The block of code is not working as it should be , so i am not using this function instead i am still using initScale function" line="40" mnemonic="1" />
+    <bookmark url="file://$PROJECT_DIR$/src/Alpha/Alpha.java" description="Too many different branches of event handler classes , pack them into neat and simple classes to follow , probably one Main class like Root_Event_Controller and then inside that controller class goes Action Methods for different threads or probably full blown sub thread classes" line="92" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5af4f9a3-9bf7-4dbf-bbf3-5cb6d9bd8f3d" name="Default" comment="" />
@@ -30,18 +30,18 @@
       <file leaf-file-name="Alpha.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="96" column="63" selection-start-line="96" selection-start-column="63" selection-end-line="96" selection-end-column="63" />
+            <state relative-caret-position="266">
+              <caret line="92" column="7" selection-start-line="92" selection-start-column="7" selection-end-line="92" selection-end-column="7" />
               <folding>
                 <element signature="docComment;class#Alpha#0" expanded="false" />
                 <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
                 <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
                 <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
                 <element signature="e#2112#2147#0" expanded="false" />
-                <element signature="e#3746#3807#0" expanded="false" />
-                <element signature="e#4926#4944#0" expanded="false" />
-                <element signature="method#handle#0;class#4959:7829" expanded="false" />
-                <element signature="e#6049#6096#0" expanded="false" />
+                <element signature="e#3974#4035#0" expanded="false" />
+                <element signature="e#5154#5172#0" expanded="false" />
+                <element signature="method#handle#0;class#5187:8057" expanded="false" />
+                <element signature="e#6277#6324#0" expanded="false" />
                 <element signature="method#main#0;class#Alpha#0" expanded="false" />
                 <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
                 <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -50,28 +50,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Snake.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Snake.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
               <folding>
                 <element signature="docComment;class#Snake#0" expanded="false" />
-                <element signature="n#!!doc;n#scales#0;n#Snake#0" expanded="false" />
                 <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
                 <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
                 <element signature="method#Snake#0;class#Snake#0" expanded="false" />
+                <element signature="e#1760#1787#0" expanded="false" />
                 <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
-                <element signature="e#1840#1861#0" expanded="false" />
+                <element signature="e#1912#1933#0" expanded="false" />
                 <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
+                <element signature="method#updateSnake#0;class#Snake#0" expanded="false" />
                 <element signature="method#generateNewHeadNode#0;class#Snake#0" expanded="false" />
+                <element signature="method#generateNewNodeArtificialIntelligence#0;class#Snake#0" expanded="false" />
                 <element signature="method#isCollidingWithItSelf#0;class#Snake#0" expanded="false" />
-                <element signature="e#8375#8455#0" expanded="false" />
+                <element signature="e#8447#8527#0" expanded="false" />
                 <element signature="method#hitsOtherSnake#0;class#Snake#0" expanded="false" />
                 <element signature="method#run#0;class#Snake#0" expanded="false" />
-                <element signature="e#10652#10680#0" expanded="false" />
-                <marker date="1495395336851" expanded="false" signature="7944:8166" ph="{...}" />
+                <element signature="e#10216#10289#0" expanded="false" />
+                <element signature="e#10724#10752#0" expanded="false" />
+                <marker date="1495396008109" expanded="false" signature="8016:8238" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scale.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -162,24 +175,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Snake-javafx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snake-javafx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snake-javafx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snake" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -603,12 +598,12 @@
       <workItem from="1495263198892" duration="26115000" />
       <workItem from="1495344866138" duration="6777000" />
       <workItem from="1495358617496" duration="4463000" />
-      <workItem from="1495379658065" duration="11103000" />
+      <workItem from="1495379658065" duration="12189000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79269000" />
+    <option name="totallyTimeSpent" value="80355000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -684,7 +679,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="40" />
+      <option name="time" value="42" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -703,10 +698,10 @@
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
             <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3746#3807#0" expanded="false" />
-            <element signature="e#4926#4944#0" expanded="false" />
-            <element signature="method#handle#0;class#4959:7829" expanded="false" />
-            <element signature="e#6049#6096#0" expanded="false" />
+            <element signature="e#3974#4035#0" expanded="false" />
+            <element signature="e#5154#5172#0" expanded="false" />
+            <element signature="method#handle#0;class#5187:8057" expanded="false" />
+            <element signature="e#6277#6324#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -723,9 +718,9 @@
             <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
             <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
             <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-            <element signature="e#1840#1861#0" expanded="false" />
+            <element signature="e#1912#1933#0" expanded="false" />
             <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-            <element signature="e#10652#10680#0" expanded="false" />
+            <element signature="e#10724#10752#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -734,17 +729,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
-          <folding>
-            <element signature="docComment;class#Scale#0" expanded="false" />
-            <element signature="n#!!doc;n#scale#0;n#Scale#0" expanded="false" />
-            <element signature="n#!!doc;n#Scale#0;n#Scale#0" expanded="false" />
-            <element signature="n#!!doc;n#initScale#0;n#Scale#0" expanded="false" />
-            <element signature="method#initScale#0;class#Scale#0" expanded="false" />
-            <element signature="method#updateScale#0;class#Scale#0" expanded="false" />
-            <element signature="e#1423#1480#0" expanded="false" />
-            <element signature="method#isScaleHittingAnyWall#0;class#Scale#0" expanded="false" />
-            <element signature="e#2205#2233#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -777,10 +762,10 @@
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
             <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3746#3807#0" expanded="false" />
-            <element signature="e#4926#4944#0" expanded="false" />
-            <element signature="method#handle#0;class#4959:7829" expanded="false" />
-            <element signature="e#6049#6096#0" expanded="false" />
+            <element signature="e#3974#4035#0" expanded="false" />
+            <element signature="e#5154#5172#0" expanded="false" />
+            <element signature="method#handle#0;class#5187:8057" expanded="false" />
+            <element signature="e#6277#6324#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -808,10 +793,10 @@
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
             <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3746#3807#0" expanded="false" />
-            <element signature="e#4926#4944#0" expanded="false" />
-            <element signature="method#handle#0;class#4959:7829" expanded="false" />
-            <element signature="e#6049#6096#0" expanded="false" />
+            <element signature="e#3974#4035#0" expanded="false" />
+            <element signature="e#5154#5172#0" expanded="false" />
+            <element signature="method#handle#0;class#5187:8057" expanded="false" />
+            <element signature="e#6277#6324#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -829,10 +814,10 @@
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
             <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3746#3807#0" expanded="false" />
-            <element signature="e#4926#4944#0" expanded="false" />
-            <element signature="method#handle#0;class#4959:7829" expanded="false" />
-            <element signature="e#6049#6096#0" expanded="false" />
+            <element signature="e#3974#4035#0" expanded="false" />
+            <element signature="e#5154#5172#0" expanded="false" />
+            <element signature="method#handle#0;class#5187:8057" expanded="false" />
+            <element signature="e#6277#6324#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -993,9 +978,9 @@
             <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
             <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
             <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-            <element signature="e#1840#1861#0" expanded="false" />
+            <element signature="e#1912#1933#0" expanded="false" />
             <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-            <element signature="e#10652#10680#0" expanded="false" />
+            <element signature="e#10724#10752#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1004,17 +989,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-          <folding>
-            <element signature="docComment;class#Scale#0" expanded="false" />
-            <element signature="n#!!doc;n#scale#0;n#Scale#0" expanded="false" />
-            <element signature="n#!!doc;n#Scale#0;n#Scale#0" expanded="false" />
-            <element signature="n#!!doc;n#initScale#0;n#Scale#0" expanded="false" />
-            <element signature="method#initScale#0;class#Scale#0" expanded="false" />
-            <element signature="method#updateScale#0;class#Scale#0" expanded="false" />
-            <element signature="e#1423#1480#0" expanded="false" />
-            <element signature="method#isScaleHittingAnyWall#0;class#Scale#0" expanded="false" />
-            <element signature="e#2205#2233#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1243,24 +1218,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Scale#0" expanded="false" />
-            <element signature="n#!!doc;n#scale#0;n#Scale#0" expanded="false" />
-            <element signature="n#!!doc;n#Scale#0;n#Scale#0" expanded="false" />
-            <element signature="n#!!doc;n#initScale#0;n#Scale#0" expanded="false" />
-            <element signature="method#initScale#0;class#Scale#0" expanded="false" />
-            <element signature="method#updateScale#0;class#Scale#0" expanded="false" />
-            <element signature="e#1423#1480#0" expanded="false" />
-            <element signature="method#isScaleHittingAnyWall#0;class#Scale#0" expanded="false" />
-            <element signature="e#2205#2233#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/root_EventHandler_thread/root_Eventhandler_thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1269,20 +1226,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding>
+            <element signature="docComment;class#Snake#0" expanded="false" />
+            <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
+            <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
+            <element signature="method#Snake#0;class#Snake#0" expanded="false" />
+            <element signature="e#1760#1787#0" expanded="false" />
+            <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
+            <element signature="e#1912#1933#0" expanded="false" />
+            <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
+            <element signature="method#updateSnake#0;class#Snake#0" expanded="false" />
+            <element signature="method#generateNewHeadNode#0;class#Snake#0" expanded="false" />
+            <element signature="method#generateNewNodeArtificialIntelligence#0;class#Snake#0" expanded="false" />
+            <element signature="method#isCollidingWithItSelf#0;class#Snake#0" expanded="false" />
+            <element signature="e#8447#8527#0" expanded="false" />
+            <element signature="method#hitsOtherSnake#0;class#Snake#0" expanded="false" />
+            <element signature="method#run#0;class#Snake#0" expanded="false" />
+            <element signature="e#10216#10289#0" expanded="false" />
+            <element signature="e#10724#10752#0" expanded="false" />
+            <marker date="1495396008109" expanded="false" signature="8016:8238" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="96" column="63" selection-start-line="96" selection-start-column="63" selection-end-line="96" selection-end-column="63" />
+        <state relative-caret-position="266">
+          <caret line="92" column="7" selection-start-line="92" selection-start-column="7" selection-end-line="92" selection-end-column="7" />
           <folding>
             <element signature="docComment;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
             <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3746#3807#0" expanded="false" />
-            <element signature="e#4926#4944#0" expanded="false" />
-            <element signature="method#handle#0;class#4959:7829" expanded="false" />
-            <element signature="e#6049#6096#0" expanded="false" />
+            <element signature="e#3974#4035#0" expanded="false" />
+            <element signature="e#5154#5172#0" expanded="false" />
+            <element signature="method#handle#0;class#5187:8057" expanded="false" />
+            <element signature="e#6277#6324#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
             <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
@@ -1290,27 +1274,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
+    <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="122" column="0" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Snake#0" expanded="false" />
-            <element signature="n#!!doc;n#scales#0;n#Snake#0" expanded="false" />
-            <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
-            <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
-            <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-            <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
-            <element signature="e#1840#1861#0" expanded="false" />
-            <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-            <element signature="method#generateNewHeadNode#0;class#Snake#0" expanded="false" />
-            <element signature="method#isCollidingWithItSelf#0;class#Snake#0" expanded="false" />
-            <element signature="e#8375#8455#0" expanded="false" />
-            <element signature="method#hitsOtherSnake#0;class#Snake#0" expanded="false" />
-            <element signature="method#run#0;class#Snake#0" expanded="false" />
-            <element signature="e#10652#10680#0" expanded="false" />
-            <marker date="1495395336851" expanded="false" signature="7944:8166" ph="{...}" />
-          </folding>
+        <state relative-caret-position="215">
+          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>

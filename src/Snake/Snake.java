@@ -2,7 +2,7 @@ package Snake;
 
 import javafx.scene.paint.Color;
 import scale.Scale;
-
+import  Food.*;
 import java.awt.geom.Point2D;
 import java.security.SecureClassLoader;
 import java.util.ArrayList;
@@ -27,6 +27,8 @@ public class Snake  implements  Runnable{
       private int movement_offet = 10;
       private int score = 0;
       private  int window_width ,  window_height;
+      private Snake user_snake;
+      private Food food;
     //endregion
 
     //region constructor
@@ -312,6 +314,20 @@ public class Snake  implements  Runnable{
 
     public void setScore(int score) {
         this.score = score;
+    }
+    public Food getFood() {
+        return food;
+    }
+
+    public void setFood(Food food) {
+        this.food = food;
+    }
+    public Snake getUser_snake() {
+        return user_snake;
+    }
+
+    public void setUser_snake(Snake user_snake) {
+        this.user_snake = user_snake;
     }
     //endregion
 
