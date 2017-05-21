@@ -67,7 +67,7 @@
        * FIX THE LATE INPUT DETECTION , IMMEDIATE ACTION REQUIRED.
        * Do Something about the score card
        * Add funcionalities into the menus
-       * snake size increases when a new food is eaten
+       * snake size increases when a new food is eaten //Fixed Now
 
   -> Next major mile stones
        * Introduce another snake

@@ -1,7 +1,9 @@
 package Alpha;
 import Food.Food;
+import Menu_Actions.Menu_Actions;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
@@ -9,12 +11,15 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import Snake.*;
 import scale.Scale;
+
+import javax.swing.*;
 
 /**
  * Created by Aamir on 5/19/2017.
@@ -34,7 +39,8 @@ public class Alpha extends Application{
     private Snake snake;
     private Food food;
     private MenuBar menubar;
-    private Menu file ,  view , exit;
+    private Menu file ,  view  , Help;
+    private MenuItem About , exit;
     private final int initial_scale = 5;
     private final int window_width  = 1250;
     private final int window_height = 600;
@@ -84,8 +90,9 @@ public class Alpha extends Application{
         root.getChildren().add(holder);
         //endregion
 
-        //region Event Handler's For input
+        //region Event Handler's For input And Menu items
 
+        //Event Handler to take input from the keyboard from snake movement
         scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event) {
@@ -117,6 +124,15 @@ public class Alpha extends Application{
                 }
             }
         });
+        //Event handler for menus
+        About.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+              Thread thread = new Thread(new Menu_Actions(Menu_Actions.CALL.ABOUT_DEVELOPER));
+                thread.start();
+            }
+        });
+
 
         //endregion
 
@@ -194,10 +210,17 @@ public class Alpha extends Application{
     //function to init all the vars
     private void initComponents() {
         menubar  = new MenuBar();
+
+        //Main menu Options
         file = new Menu("File");
         view = new Menu("View");
-        exit = new Menu("Exit");
-        menubar.getMenus().addAll(file , view , exit);
+        Help = new Menu("Help");
+
+        //Sub menu items inside those menus
+        About = new MenuItem("About Developer");
+        exit  = new MenuItem("Exit");
+        Help.getItems().addAll(About , exit);
+        menubar.getMenus().addAll(file , view  , Help);
     }
     //endregion
 }
