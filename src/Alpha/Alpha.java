@@ -17,6 +17,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import Snake.*;
+import root_EventHandler_thread.root_Eventhandler_thread;
 import scale.Scale;
 
 import javax.swing.*;
@@ -92,46 +93,10 @@ public class Alpha extends Application{
 
         //region Event Handler's For input And Menu items
 
-        //Event Handler to take input from the keyboard from snake movement
-        scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
-            @Override
-            public void handle(KeyEvent event) {
-                switch (event.getCode()){
-                    case LEFT:
-                        if (snake.getSnake_direction() != Snake.DIRECTION.RIGHT){
-                            snake.setSnake_direction(Snake.DIRECTION.LEFT);
-                        }
-                        break;
-                    case UP:
-                        if (snake.getSnake_direction() != Snake.DIRECTION.DOWN){
-                            snake.setSnake_direction(Snake.DIRECTION.UP);
-                        }
-                        break;
-                    case RIGHT:
-                        if (snake.getSnake_direction() != Snake.DIRECTION.LEFT){
-                            snake.setSnake_direction(Snake.DIRECTION.RIGHT);
-                        }
-                        break;
-                    case DOWN:
-                        if (snake.getSnake_direction() !=  Snake.DIRECTION.UP){
-                            snake.setSnake_direction(Snake.DIRECTION.DOWN);
-                        }
-                        break;
-                    default:
-                        //do nothing
-                        break;
 
-                }
-            }
-        });
-        //Event handler for menus
-        About.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-              Thread thread = new Thread(new Menu_Actions(Menu_Actions.CALL.ABOUT_DEVELOPER));
-                thread.start();
-            }
-        });
+        root_Eventhandler_thread Parent_Input_Threaded_EventHandler = new root_Eventhandler_thread(snake,scene,About);
+        Thread event_handler_thread = new Thread(Parent_Input_Threaded_EventHandler);
+        event_handler_thread.start();
 
 
         //endregion

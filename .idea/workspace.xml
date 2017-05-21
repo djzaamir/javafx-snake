@@ -30,73 +30,26 @@
       <file leaf-file-name="Alpha.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="218" column="43" selection-start-line="218" selection-start-column="43" selection-end-line="218" selection-end-column="43" />
+            <state relative-caret-position="156">
+              <caret line="98" column="37" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
               <folding>
                 <element signature="docComment;class#Alpha#0" expanded="false" />
-                <element signature="e#2013#2048#0" expanded="false" />
-                <element signature="class#3266:4523" expanded="false" />
-                <element signature="method#handle#0;class#3266:4523" expanded="false" />
-                <element signature="e#4878#4939#0" expanded="false" />
-                <element signature="e#5591#5609#0" expanded="false" />
+                <element signature="e#2071#2106#0" expanded="false" />
+                <element signature="e#3489#3550#0" expanded="false" />
+                <element signature="e#4202#4220#0" expanded="false" />
                 <element signature="method#main#0;class#Alpha#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Menu_Actions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Menu_Actions/Menu_Actions.java">
+      <file leaf-file-name="root_Eventhandler_thread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/root_EventHandler_thread/root_Eventhandler_thread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-              <folding>
-                <element signature="n#!!doc;n#CALL#0;n#Menu_Actions#0" expanded="false" />
-                <element signature="n#!!doc;n#Menu_Actions#0;n#Menu_Actions#0" expanded="false" />
-                <element signature="e#314#315#0" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
-                <element signature="n#!!doc;n#displayAboutDeveloper#0;n#Menu_Actions#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Food.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Food/Food.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
+            <state relative-caret-position="255">
+              <caret line="25" column="35" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Snake.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
-              <folding>
-                <element signature="docComment;class#Snake#0" expanded="false" />
-                <element signature="e#1574#1595#0" expanded="false" />
-                <element signature="e#3989#4007#0" expanded="false" />
-                <element signature="e#5170#5198#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scale.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-              <folding>
-                <element signature="docComment;class#Scale#0" expanded="false" />
-                <element signature="e#2201#2229#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -131,6 +84,7 @@
         <option value="$PROJECT_DIR$/src/Snake/Snake.java" />
         <option value="$PROJECT_DIR$/src/Food/Food.java" />
         <option value="$PROJECT_DIR$/src/Menu_Actions/Menu_Actions.java" />
+        <option value="$PROJECT_DIR$/src/root_EventHandler_thread/root_Eventhandler_thread.java" />
         <option value="$PROJECT_DIR$/src/Alpha/Alpha.java" />
       </list>
     </option>
@@ -218,7 +172,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Menu_Actions" />
+              <option name="myItemId" value="root_EventHandler_thread" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -623,12 +577,12 @@
       <updated>1495179936871</updated>
       <workItem from="1495179943399" duration="30811000" />
       <workItem from="1495263198892" duration="26115000" />
-      <workItem from="1495344866138" duration="3503000" />
+      <workItem from="1495344866138" duration="5022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60429000" />
+    <option name="totallyTimeSpent" value="61948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -719,11 +673,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="e#2013#2048#0" expanded="false" />
-            <element signature="class#3266:4523" expanded="false" />
-            <element signature="method#handle#0;class#3266:4523" expanded="false" />
-            <element signature="e#4878#4939#0" expanded="false" />
-            <element signature="e#5591#5609#0" expanded="false" />
+            <element signature="e#2071#2106#0" expanded="false" />
+            <element signature="e#3489#3550#0" expanded="false" />
+            <element signature="e#4202#4220#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>
@@ -735,11 +687,9 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="e#2013#2048#0" expanded="false" />
-            <element signature="class#3266:4523" expanded="false" />
-            <element signature="method#handle#0;class#3266:4523" expanded="false" />
-            <element signature="e#4878#4939#0" expanded="false" />
-            <element signature="e#5591#5609#0" expanded="false" />
+            <element signature="e#2071#2106#0" expanded="false" />
+            <element signature="e#3489#3550#0" expanded="false" />
+            <element signature="e#4202#4220#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>
@@ -1100,8 +1050,8 @@
         <state relative-caret-position="408">
           <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="false" />
+            <element signature="e#323#324#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1135,7 +1085,7 @@
         <state relative-caret-position="170">
           <caret line="92" column="32" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
           </folding>
         </state>
@@ -1143,29 +1093,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Menu_Actions/Menu_Actions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        <state relative-caret-position="221">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc;n#CALL#0;n#Menu_Actions#0" expanded="false" />
             <element signature="n#!!doc;n#Menu_Actions#0;n#Menu_Actions#0" expanded="false" />
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="false" />
+            <element signature="e#362#363#0" expanded="false" />
             <element signature="n#!!doc;n#displayAboutDeveloper#0;n#Menu_Actions#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/root_EventHandler_thread/root_Eventhandler_thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="218" column="43" selection-start-line="218" selection-start-column="43" selection-end-line="218" selection-end-column="43" />
+        <state relative-caret-position="156">
+          <caret line="98" column="37" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
           <folding>
             <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="e#2013#2048#0" expanded="false" />
-            <element signature="class#3266:4523" expanded="false" />
-            <element signature="method#handle#0;class#3266:4523" expanded="false" />
-            <element signature="e#4878#4939#0" expanded="false" />
-            <element signature="e#5591#5609#0" expanded="false" />
+            <element signature="e#2071#2106#0" expanded="false" />
+            <element signature="e#3489#3550#0" expanded="false" />
+            <element signature="e#4202#4220#0" expanded="false" />
             <element signature="method#main#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>
