@@ -3,6 +3,7 @@ package Snake;
 import javafx.scene.paint.Color;
 import scale.Scale;
 
+import java.awt.geom.Point2D;
 import java.security.SecureClassLoader;
 import java.util.ArrayList;
 
@@ -46,7 +47,7 @@ public class Snake {
 
     //region Functional Section
 
-       public void initSnake(int w , int h) {
+    public void initSnake(int w , int h) {
 
            for (int i =0 ; i < initial_len ; i++){
                if (i == 0) {//if no nodes present
@@ -112,30 +113,51 @@ public class Snake {
 
            //Now updating head node at the very END of algorithm
            Scale head = this.scales.get(0); //this is the head node index in array
+           Scale to_check =  this.scales.get(0);
+           boolean  colliding = false;
            switch (snake_direction){
                case LEFT:
                    //Decrement X-axis
 
-                   //head.setLoc_x(head.getLoc_x()-this.radius-this.movement_offet);
-                   this.scales.get(0).setLoc_x(head.getLoc_x()-this.radius-this.movement_offet);
-                   this.scales.get(0).isScaleHittingAnyWall();
+                   colliding =  isCollidingWithItSelf(to_check.getLoc_x()-this.radius-this.movement_offet, to_check.getLoc_y()); //Performing self collision detection
+                   this.scales.get(0).setLoc_x(head.getLoc_x()-this.radius-this.movement_offet); //Assign new cords
+
+                   //Handling self collision based on results
+                   if (colliding){
+                       this.isAlive = false;
+                   }
+
+                   this.scales.get(0).isScaleHittingAnyWall();  //Wall hit handling
                    break;
                case UP:
                    //Decrement Y-axis
 
+
+                   colliding =  isCollidingWithItSelf(to_check.getLoc_x(), to_check.getLoc_y()-this.radius-this.movement_offet); //Performing self collision detection
                    this.scales.get(0).setLoc_y(head.getLoc_y()-this.radius-this.movement_offet);
+                   if (colliding){
+                       this.isAlive = false;
+                   }
                    this.scales.get(0).isScaleHittingAnyWall();
                    break;
                case RIGHT:
                    //Increment X-axis
 
+                   colliding =  isCollidingWithItSelf(to_check.getLoc_x()+this.radius+this.movement_offet, to_check.getLoc_y()); //Performing self collision detection
                    this.scales.get(0).setLoc_x(head.getLoc_x()+this.radius+this.movement_offet);
+                   //Handling self collision based on results
+                    if (colliding){
+                       this.isAlive = false;
+                    }
                    this.scales.get(0).isScaleHittingAnyWall();
                    break;
                case DOWN:
                    //Increment Y-axis
-
+                   colliding =  isCollidingWithItSelf(to_check.getLoc_x(), to_check.getLoc_y()+this.radius+this.movement_offet); //Performing self collision detection
                    this.scales.get(0).setLoc_y(head.getLoc_y()+this.radius+this.movement_offet);
+                   if (colliding){
+                       this.isAlive = false;
+                   }
                    this.scales.get(0).isScaleHittingAnyWall();
                    break;
                default:
@@ -143,6 +165,24 @@ public class Snake {
                    break;
            }
        }
+
+    public boolean isCollidingWithItSelf(int x , int y){
+
+        int hit_proximity = 16;  //This is distance , after which the snake is collided with itself
+
+        //Now scan all the scales of snake and check for Euclidean distance between them
+        //if the new incoming cords are too close with any of the scale , snake dead , collided with scale , set isAlive to false
+        Point2D new_headNode_vector =new  Point2D.Double(x , y);
+        for(Scale scale : this.scales){
+            Point2D scale_vector = new Point2D.Double(scale.getLoc_x() , scale.getLoc_y());
+            int distance = (int) new_headNode_vector.distance(scale_vector);
+            if (distance < hit_proximity){
+               return true;
+            }
+        }
+        //Return false , because no scale was too close
+        return false;
+    }
 
     //endregion
 

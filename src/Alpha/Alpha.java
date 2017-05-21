@@ -78,7 +78,7 @@ public class Alpha extends Application{
         //Canvas holder Vbox pane ,  this is being  used here primarily to change background color
         VBox holder =  new VBox();  //We are using Vbox here because we want to place the menu-bar at the very top ,
                                     // and this automatically puts first node at the top
-        holder.setStyle("-fx-background-color: green");
+        holder.setStyle("-fx-background-color: black");
 
         //Adding menu bar
         holder.getChildren().add(menubar);
@@ -132,9 +132,13 @@ public class Alpha extends Application{
 
                     gc.clearRect(0 , 0 , window_width , window_height);
                     snake.updateSnake();
+                    if (!snake.isAlive()){
+                        this.stop();
+                        JOptionPane.showMessageDialog(null , "Game Over Dude!");
+                    }
                     food.handleFoodCollision(snakes);
 
-                    //Now reading stuff to the screen
+                    //Now redrawing stuff to the screen
 
                     for(Scale scale : snake.getScales()){
                         scale.initScale(); //initialize the scale object , this is necessary because of the internal Implementation of Scale Object
@@ -145,7 +149,7 @@ public class Alpha extends Application{
 
                     //Pausing the thread here , although we have to change this becuase this is not the proper way to do it , also its causing problems with the main thread
                     try {
-                        Thread.sleep(50);
+                        Thread.sleep(30);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
