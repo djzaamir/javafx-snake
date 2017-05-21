@@ -64,22 +64,26 @@ public class Snake {
 
                }else{
 
-                   Scale last_node  = this.scales.get(this.scales.size()-1); //getting Last node in the list
-                   Scale new_scale = new Scale(this.color);
-
-                   //Setting up this scale
-                   new_scale.setCenter_x(center_x);
-                   new_scale.setCenter_y(center_y);
-                   new_scale.setRadius(radius);
-                   new_scale.setLoc_x(last_node.getLoc_x()-this.radius-movement_offet); //Adjusting X position here 30 is the additive offset between nodes
-                   new_scale.setLoc_y(h / 2);
-                   //Finally add it to the list
-                   this.scales.add(new_scale);
+                   addTrailingScale();
                }
            }
        }
 
-       public void updateSnake(){
+    public void addTrailingScale() {
+        Scale last_node  = this.scales.get(this.scales.size()-1); //getting Last node in the list
+        Scale new_scale = new Scale(this.color);
+
+        //Setting up this scale
+        new_scale.setCenter_x(center_x);
+        new_scale.setCenter_y(center_y);
+        new_scale.setRadius(radius);
+        new_scale.setLoc_x(last_node.getLoc_x()-this.radius-movement_offet); //Adjusting X position here 30 is the additive offset between nodes
+        new_scale.setLoc_y(window_height / 2);
+        //Finally add it to the list
+        this.scales.add(new_scale);
+    }
+
+    public void updateSnake(){
 
            /*AlGARETH
            * Update all nodes to the cords of next node

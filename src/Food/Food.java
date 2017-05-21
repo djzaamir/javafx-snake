@@ -105,6 +105,7 @@ public class Food {
                 if (dist < 16){
                     //This means that the food is being hit
                     snake.setScore(snake.getScore()+1); //update the score of relevant snake
+                    snake.addTrailingScale();
                     //update the location of food
                     initFood(snakes);//display food at new location
                     break;
