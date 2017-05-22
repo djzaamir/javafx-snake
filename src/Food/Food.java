@@ -1,6 +1,8 @@
 package Food;
 
 import Snake.Snake;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
@@ -16,10 +18,11 @@ public class Food {
 
 
     //region VARS
-     private Rectangle food;
+     private Image image;
+     private ImageView food;
      private  int food_loc_x;
      private  int food_loc_y;
-     private  int w_l = 16; //Food Size
+     private  int w_l = 35; //Food Size
      private  int window_width ,  window_height;
     //endregion
 
@@ -27,11 +30,14 @@ public class Food {
 
     //region Constructor
      public Food(int window_width , int window_height , Color color){
-         food =  new Rectangle(w_l,w_l); //Width and height set to 10,10 Pixels
-         food.setFill(color);
+         image =  new Image("file:food.png");
+         food =  new ImageView(image); //Width and height set to 10,10 Pixels
+         //food.setFill(color);
+         food.setFitWidth(w_l);
+         food.setFitHeight(w_l);
          this.window_width  = window_width;
          this.window_height = window_height;
-         
+
      }
     //endregion
 
@@ -86,6 +92,7 @@ public class Food {
     //This will check if the any part of user snake has hi
     public void handleFoodCollision(Snake[] snakes){
 
+        int hit_proximity = 24;
         /*
         * At most two snakes will past into this function
         * The first one will Be User snake
@@ -113,7 +120,7 @@ public class Food {
                 //Calculating Euclidean Distance (Pythagoras theorem)
                 Point2D scale_vector = new Point2D.Double(scale.getLoc_x() , scale.getLoc_y());
                 int dist = (int) food_vector.distance(scale_vector);
-                if (dist < 16){
+                if (dist < hit_proximity){
                     //This means that the food is being hit
                     snake.setScore(snake.getScore()+1); //update the score of relevant snake
                     snake.addTrailingScale();
@@ -146,11 +153,11 @@ public class Food {
     public void setFood_loc_x(int food_loc_x) {
         this.food_loc_x = food_loc_x;
     }
-    public Rectangle getFood() {
+    public ImageView getFood() {
         return food;
     }
 
-    public void setFood(Rectangle food) {
+    public void setFood(ImageView food) {
         this.food = food;
     }
     //endregion

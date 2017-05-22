@@ -49,16 +49,17 @@
       <file leaf-file-name="Food.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Food/Food.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+            <state relative-caret-position="34">
+              <caret line="94" column="30" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="docComment;class#Food#0" expanded="false" />
-                <element signature="n#!!doc;n#initFood#0;n#Food#0" expanded="false" />
                 <element signature="method#initFood#0;class#Food#0" expanded="false" />
                 <element signature="method#getLocationForFood#0;class#Food#0" expanded="false" />
-                <element signature="e#1989#2025#0" expanded="false" />
-                <element signature="method#handleFoodCollision#0;class#Food#0" expanded="false" />
+                <element signature="e#2187#2223#0" expanded="false" />
                 <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
+                <element signature="e#5074#5075#0" expanded="true" />
+                <element signature="e#5101#5102#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -637,12 +638,12 @@
       <workItem from="1495344866138" duration="6777000" />
       <workItem from="1495358617496" duration="4463000" />
       <workItem from="1495379658065" duration="14544000" />
-      <workItem from="1495459774532" duration="6194000" />
+      <workItem from="1495459774532" duration="7297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88904000" />
+    <option name="totallyTimeSpent" value="90007000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -824,13 +825,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;class#Food#0" expanded="false" />
-            <element signature="n#!!doc;n#initFood#0;n#Food#0" expanded="false" />
             <element signature="method#initFood#0;class#Food#0" expanded="false" />
             <element signature="method#getLocationForFood#0;class#Food#0" expanded="false" />
-            <element signature="e#1989#2025#0" expanded="false" />
-            <element signature="method#handleFoodCollision#0;class#Food#0" expanded="false" />
+            <element signature="e#2187#2223#0" expanded="false" />
             <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
+            <element signature="e#5074#5075#0" expanded="true" />
+            <element signature="e#5101#5102#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1301,6 +1303,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+          <folding>
+            <element signature="docComment;class#Alpha#0" expanded="false" />
+            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
+            <element signature="e#2112#2147#0" expanded="false" />
+            <element signature="e#3278#3315#0" expanded="false" />
+            <element signature="e#4189#4250#0" expanded="false" />
+            <element signature="e#6492#6539#0" expanded="false" />
+            <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
+            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1326,35 +1345,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
-          <folding>
-            <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
-            <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3278#3315#0" expanded="false" />
-            <element signature="e#4189#4250#0" expanded="false" />
-            <element signature="e#6492#6539#0" expanded="false" />
-            <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
-            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Food/Food.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="34">
+          <caret line="94" column="30" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="docComment;class#Food#0" expanded="false" />
-            <element signature="n#!!doc;n#initFood#0;n#Food#0" expanded="false" />
             <element signature="method#initFood#0;class#Food#0" expanded="false" />
             <element signature="method#getLocationForFood#0;class#Food#0" expanded="false" />
-            <element signature="e#1989#2025#0" expanded="false" />
-            <element signature="method#handleFoodCollision#0;class#Food#0" expanded="false" />
+            <element signature="e#2187#2223#0" expanded="false" />
             <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
+            <element signature="e#5074#5075#0" expanded="true" />
+            <element signature="e#5101#5102#0" expanded="true" />
           </folding>
         </state>
       </provider>
