@@ -89,18 +89,22 @@ public class Alpha extends Application{
 
         //region Event Handler's  and THREADS For input And Menu items
 
-
+          //region Handlers for scene and about
         root_Eventhandler_thread Parent_Input_Threaded_EventHandler = new root_Eventhandler_thread(snake,scene,About);//snake is passed in because we need Key ENUMS present inside snake class
         Thread event_handler_thread = new Thread(Parent_Input_Threaded_EventHandler);
         event_handler_thread.start();
+        //endregion
 
+          //region Snake-2(Computer Snake) Running in seprate thread  , (its update method)
         //Snake no 2 update method is running is sperate thread
         //Also before starting the thread we are going to pass the food and user snake object as well to computer snake
         snake2.setFood(food);
         snake2.setUser_snake(snake);
+        snake2.setSnake_speed(333);
         //Now seperating from Main thread
         Thread snk2 = new Thread(snake2);
          snk2.start();
+        //endregion
 
         //endregion
 

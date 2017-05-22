@@ -5,6 +5,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
 import java.awt.geom.Point2D;
+import java.io.File;
 import java.util.Random;
 
 /**
@@ -30,6 +31,7 @@ public class Food {
          food.setFill(color);
          this.window_width  = window_width;
          this.window_height = window_height;
+         
      }
     //endregion
 

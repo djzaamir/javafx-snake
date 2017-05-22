@@ -29,6 +29,8 @@ public class Snake  implements  Runnable{
       private  int window_width ,  window_height;
       private Snake user_snake;
       private Food food;
+      private int snake_speed = 333;
+
     //endregion
 
     //region constructor
@@ -96,7 +98,7 @@ public class Snake  implements  Runnable{
 
     public void updateSnake() throws InterruptedException {
 
-           /*AlGORITHM
+           /*Algorithm
            * Update all nodes to the cords of next node
            * Finally update the Head node to new Cords
            * */
@@ -124,9 +126,11 @@ public class Snake  implements  Runnable{
             if (!this.artificial_inteligence){  //Works on user input
                 generateNewHeadNode();
             }else{
-                //Generates snake direction based on some algorithm
-                generateNewNodeArtificialIntelligence();
+               //Generates snake direction based on some algorithm
+              //generateNewNodeArtificialIntelligence();
+              generateNewHeadNode();
             }
+        //And seperate function call for artifical intelligence  computer snake
 
 
        }
@@ -189,112 +193,6 @@ public class Snake  implements  Runnable{
     //Artificial Intelligence function , to control snake automatically
     private void generateNewNodeArtificialIntelligence(){
 
-      if (this.timerCountToChangeDirection == 1){//this will turn on after adding three consecutive scales
-          this.timerCountToChangeDirection = 0;
-
-          /*
-          * This function should generate new Scale for computer snake which satisfies the following
-          * Shouldnt be placed at the following
-          *     => Close to food
-          *     => Close to itself
-          *     => Close to User_snake
-          * */
-
-          boolean direction_good = true; //assuming good
-          Scale head_node = this.scales.get(0); //getting head node
-
-          do{
-              int random_direction = new Random().nextInt(4)+1; //adding 1 , coz we dont want 0 here
-              //1 -> left
-              //2 ->  UP
-              //3 ->  Right
-              //4 ->  Down
-
-              switch (random_direction){
-                  case 1:
-
-                      //MOVE LEFT   => Decrement X
-                      //CHECK COLLISION WITH FOOD on Adding x=x+1
-                      //CHECK COLLISION WITH USER-SNAKE on Adding x = x+1
-                      //CHECK SELF COLLISION on Adding x = x+1
-                      int potential_x = head_node.getLoc_x()-this.radius-this.movement_offet; //Potential x after next update
-                      //Y remains same , so not checking of y
-
-                      //if NOT colliding with food AND USER-SNAKE AND ITSELF
-                      if (    !isCollidingWithFood(potential_x , head_node.getLoc_y())  &&
-                              !hitsOtherSnake(user_snake)  &&
-                              !isCollidingWithItSelf(potential_x , head_node.getLoc_y())){
-                          //Then it means that the new location is good to assign
-                          head_node.setLoc_x(potential_x);
-                          direction_good = true; //break outtta loop
-                      }
-
-                      break;
-                  case 2:
-
-
-                      //MOVE UP   => Decrement Y
-                      //Rest of the logic is same as above
-                      int potential_y = head_node.getLoc_y()-this.radius-this.movement_offet; //Potential y after next update
-                      //x remains same , so not checking of y
-
-                      //if NOT colliding with food AND USER-SNAKE AND ITSELF
-                      if (    !isCollidingWithFood(potential_y , head_node.getLoc_y())  &&
-                              !hitsOtherSnake(user_snake)  &&
-                              !isCollidingWithItSelf(potential_y , head_node.getLoc_y())){
-                          //Then it means that the new location is good to assign
-                          head_node.setLoc_y(potential_y);
-                          direction_good = true; //break outtta loop
-                      }
-
-
-                      break;
-                  case 3:
-
-
-                      //MOVE RIGHT   => Increment X
-                      //Rest of the logic is same as above
-                      int potential_x_ = head_node.getLoc_y()+this.radius+this.movement_offet; //Potential x after next update
-                      //Y remains same , so not checking of y
-
-                      //if NOT colliding with food AND USER-SNAKE AND ITSELF
-                      if (    !isCollidingWithFood(potential_x_ , head_node.getLoc_y())  &&
-                              !hitsOtherSnake(user_snake)  &&
-                              !isCollidingWithItSelf(potential_x_ , head_node.getLoc_y())){
-                          //Then it means that the new location is good to assign
-                          head_node.setLoc_x(potential_x_);
-                          direction_good = true; //break outtta loop
-                      }
-
-                      break;
-                  case 4:
-
-
-                      //MOVE DOWN   => Increment Y
-                      //Rest of the logic is same as above
-                      int potential_y__ = head_node.getLoc_y()+this.radius+this.movement_offet; //Potential Y after next update
-                      //x remains same , so not checking of y
-
-                      //if NOT colliding with food AND USER-SNAKE AND ITSELF
-                      if (    !isCollidingWithFood(potential_y__ , head_node.getLoc_y())  &&
-                              !hitsOtherSnake(user_snake)  &&
-                              !isCollidingWithItSelf(potential_y__ , head_node.getLoc_y())){
-                          //Then it means that the new location is good to assign
-                          head_node.setLoc_y(potential_y__);
-                          direction_good = true; //break outtta loop
-                      }
-
-                      break;
-                  default:
-                      //do nothing
-                      break;
-              }
-          }
-          while(!direction_good);//end of while Main while loop
-
-
-
-      }
     }
 
 
@@ -369,6 +267,7 @@ public class Snake  implements  Runnable{
         while (true){
             try {
                 this.updateSnake();
+                this.hitsOtherSnake(user_snake);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -381,7 +280,7 @@ public class Snake  implements  Runnable{
                 }
                 //Direction change Timer Mechanism
                 this.timerCountToChangeDirection++;
-                Thread.sleep(333);
+                Thread.sleep(snake_speed); //this is basically used to control the speed of snake
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -435,6 +334,14 @@ public class Snake  implements  Runnable{
 
     public void setUser_snake(Snake user_snake) {
         this.user_snake = user_snake;
+    }
+
+    public int getSnake_speed() {
+        return snake_speed;
+    }
+
+    public void setSnake_speed(int snake_speed) {
+        this.snake_speed = snake_speed;
     }
     //endregion
 
