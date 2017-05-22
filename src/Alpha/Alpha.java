@@ -36,7 +36,7 @@ public class Alpha extends Application{
     private Snake snake ,  snake2;
     private Food food;
     private MenuBar menubar;
-    private Menu file ,  view  , Help;
+    private Menu file   , Help;
     private MenuItem About , exit;
     private final int initial_scale = 5;
     private final int window_width  = 1250;
@@ -218,14 +218,13 @@ public class Alpha extends Application{
 
         //Main menu Options
         file = new Menu("File");
-        view = new Menu("View");
         Help = new Menu("Help");
 
         //Sub menu items inside those menus
         About = new MenuItem("About Developer");
         exit  = new MenuItem("Exit");
         Help.getItems().addAll(About , exit);
-        menubar.getMenus().addAll(file , view  , Help);
+        menubar.getMenus().addAll(file   , Help);
     }
     //endregion
 }

@@ -3,6 +3,7 @@
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/scale/Scale.java" description="The block of code is not working as it should be , so i am not using this function instead i am still using initScale function" line="40" mnemonic="1" />
     <bookmark url="file://$PROJECT_DIR$/src/Alpha/Alpha.java" description="Too many different branches of event handler classes , pack them into neat and simple classes to follow , probably one Main class like Root_Event_Controller and then inside that controller class goes Action Methods for different threads or probably full blown sub thread classes" line="91" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/src/Food/Food.java" description="Sound not being played , probably because its not detecting sound file" line="128" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5af4f9a3-9bf7-4dbf-bbf3-5cb6d9bd8f3d" name="Default" comment="" />
@@ -30,17 +31,23 @@
       <file leaf-file-name="Alpha.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+            <state relative-caret-position="204">
+              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
               <folding>
                 <element signature="docComment;class#Alpha#0" expanded="false" />
-                <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
-                <element signature="e#2112#2147#0" expanded="false" />
-                <element signature="e#3278#3315#0" expanded="false" />
-                <element signature="e#4189#4250#0" expanded="false" />
-                <element signature="e#6492#6539#0" expanded="false" />
-                <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
-                <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
+                <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
+                <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+                <element signature="method#start#0;class#Alpha#0" expanded="false" />
+                <element signature="e#2105#2140#0" expanded="false" />
+                <element signature="e#3197#3259#0" expanded="false" />
+                <element signature="e#3271#3308#0" expanded="false" />
+                <element signature="e#3656#3737#0" expanded="false" />
+                <element signature="e#4182#4243#0" expanded="false" />
+                <element signature="e#5362#5380#0" expanded="false" />
+                <element signature="class#5395:8265" expanded="false" />
+                <element signature="method#handle#0;class#5395:8265" expanded="false" />
+                <element signature="e#6485#6532#0" expanded="false" />
+                <element signature="method#main#0;class#Alpha#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -49,44 +56,15 @@
       <file leaf-file-name="Food.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Food/Food.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="94" column="30" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
+            <state relative-caret-position="170">
+              <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#Food#0" expanded="false" />
                 <element signature="method#initFood#0;class#Food#0" expanded="false" />
                 <element signature="method#getLocationForFood#0;class#Food#0" expanded="false" />
-                <element signature="e#2187#2223#0" expanded="false" />
+                <element signature="e#2259#2295#0" expanded="false" />
                 <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
-                <element signature="e#5074#5075#0" expanded="true" />
-                <element signature="e#5101#5102#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Snake.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="265" column="23" selection-start-line="265" selection-start-column="23" selection-end-line="265" selection-end-column="23" />
-              <folding>
-                <element signature="docComment;class#Snake#0" expanded="false" />
-                <element signature="n#!!doc;n#scales#0;n#Snake#0" expanded="false" />
-                <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
-                <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
-                <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-                <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
-                <element signature="e#1950#1971#0" expanded="false" />
-                <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-                <element signature="method#generateNewHeadNode#0;class#Snake#0" expanded="false" />
-                <element signature="method#generateNewNodeArtificialIntelligence#0;class#Snake#0" expanded="false" />
-                <element signature="method#ifSnakeCollided#0;class#Snake#0" expanded="false" />
-                <element signature="method#isCollidingWithItSelf#0;class#Snake#0" expanded="false" />
-                <element signature="e#8150#8230#0" expanded="false" />
-                <element signature="method#hitsOtherSnake#0;class#Snake#0" expanded="false" />
-                <element signature="method#isCollidingWithFood#0;class#Snake#0" expanded="false" />
-                <element signature="e#11091#11119#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -193,24 +171,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snake-javafx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Snake-javafx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Food" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -638,12 +598,12 @@
       <workItem from="1495344866138" duration="6777000" />
       <workItem from="1495358617496" duration="4463000" />
       <workItem from="1495379658065" duration="14544000" />
-      <workItem from="1495459774532" duration="7297000" />
+      <workItem from="1495459774532" duration="9715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90007000" />
+    <option name="totallyTimeSpent" value="92425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -734,13 +694,19 @@
           <caret line="92" column="7" selection-start-line="92" selection-start-column="7" selection-end-line="92" selection-end-column="7" />
           <folding>
             <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
-            <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3278#3315#0" expanded="false" />
-            <element signature="e#4189#4250#0" expanded="false" />
-            <element signature="e#6492#6539#0" expanded="false" />
-            <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
-            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
+            <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
+            <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+            <element signature="method#start#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2105#2140#0" expanded="false" />
+            <element signature="e#3197#3259#0" expanded="false" />
+            <element signature="e#3271#3308#0" expanded="false" />
+            <element signature="e#3656#3737#0" expanded="false" />
+            <element signature="e#4182#4243#0" expanded="false" />
+            <element signature="e#5362#5380#0" expanded="false" />
+            <element signature="class#5395:8265" expanded="false" />
+            <element signature="method#handle#0;class#5395:8265" expanded="false" />
+            <element signature="e#6485#6532#0" expanded="false" />
+            <element signature="method#main#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -776,13 +742,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
-            <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3278#3315#0" expanded="false" />
-            <element signature="e#4189#4250#0" expanded="false" />
-            <element signature="e#6492#6539#0" expanded="false" />
-            <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
-            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
+            <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
+            <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+            <element signature="method#start#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2105#2140#0" expanded="false" />
+            <element signature="e#3197#3259#0" expanded="false" />
+            <element signature="e#3271#3308#0" expanded="false" />
+            <element signature="e#3656#3737#0" expanded="false" />
+            <element signature="e#4182#4243#0" expanded="false" />
+            <element signature="e#5362#5380#0" expanded="false" />
+            <element signature="class#5395:8265" expanded="false" />
+            <element signature="method#handle#0;class#5395:8265" expanded="false" />
+            <element signature="e#6485#6532#0" expanded="false" />
+            <element signature="method#main#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -829,10 +801,8 @@
             <element signature="docComment;class#Food#0" expanded="false" />
             <element signature="method#initFood#0;class#Food#0" expanded="false" />
             <element signature="method#getLocationForFood#0;class#Food#0" expanded="false" />
-            <element signature="e#2187#2223#0" expanded="false" />
+            <element signature="e#2259#2295#0" expanded="false" />
             <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
-            <element signature="e#5074#5075#0" expanded="true" />
-            <element signature="e#5101#5102#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -843,13 +813,19 @@
           <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
-            <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3278#3315#0" expanded="false" />
-            <element signature="e#4189#4250#0" expanded="false" />
-            <element signature="e#6492#6539#0" expanded="false" />
-            <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
-            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
+            <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
+            <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+            <element signature="method#start#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2105#2140#0" expanded="false" />
+            <element signature="e#3197#3259#0" expanded="false" />
+            <element signature="e#3271#3308#0" expanded="false" />
+            <element signature="e#3656#3737#0" expanded="false" />
+            <element signature="e#4182#4243#0" expanded="false" />
+            <element signature="e#5362#5380#0" expanded="false" />
+            <element signature="class#5395:8265" expanded="false" />
+            <element signature="method#handle#0;class#5395:8265" expanded="false" />
+            <element signature="e#6485#6532#0" expanded="false" />
+            <element signature="method#main#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -868,13 +844,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
-            <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3278#3315#0" expanded="false" />
-            <element signature="e#4189#4250#0" expanded="false" />
-            <element signature="e#6492#6539#0" expanded="false" />
-            <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
-            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
+            <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
+            <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+            <element signature="method#start#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2105#2140#0" expanded="false" />
+            <element signature="e#3197#3259#0" expanded="false" />
+            <element signature="e#3271#3308#0" expanded="false" />
+            <element signature="e#3656#3737#0" expanded="false" />
+            <element signature="e#4182#4243#0" expanded="false" />
+            <element signature="e#5362#5380#0" expanded="false" />
+            <element signature="class#5395:8265" expanded="false" />
+            <element signature="method#handle#0;class#5395:8265" expanded="false" />
+            <element signature="e#6485#6532#0" expanded="false" />
+            <element signature="method#main#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -885,13 +867,19 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
-            <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3278#3315#0" expanded="false" />
-            <element signature="e#4189#4250#0" expanded="false" />
-            <element signature="e#6492#6539#0" expanded="false" />
-            <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
-            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
+            <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
+            <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+            <element signature="method#start#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2105#2140#0" expanded="false" />
+            <element signature="e#3197#3259#0" expanded="false" />
+            <element signature="e#3271#3308#0" expanded="false" />
+            <element signature="e#3656#3737#0" expanded="false" />
+            <element signature="e#4182#4243#0" expanded="false" />
+            <element signature="e#5362#5380#0" expanded="false" />
+            <element signature="class#5395:8265" expanded="false" />
+            <element signature="method#handle#0;class#5395:8265" expanded="false" />
+            <element signature="e#6485#6532#0" expanded="false" />
+            <element signature="method#main#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1303,23 +1291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
-          <folding>
-            <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
-            <element signature="e#2112#2147#0" expanded="false" />
-            <element signature="e#3278#3315#0" expanded="false" />
-            <element signature="e#4189#4250#0" expanded="false" />
-            <element signature="e#6492#6539#0" expanded="false" />
-            <element signature="n#!!doc;n#initComponents#0;n#Alpha#0" expanded="false" />
-            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1345,19 +1316,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <folding>
+            <element signature="docComment;class#Alpha#0" expanded="false" />
+            <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
+            <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+            <element signature="method#start#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2105#2140#0" expanded="false" />
+            <element signature="e#3197#3259#0" expanded="false" />
+            <element signature="e#3271#3308#0" expanded="false" />
+            <element signature="e#3656#3737#0" expanded="false" />
+            <element signature="e#4182#4243#0" expanded="false" />
+            <element signature="e#5362#5380#0" expanded="false" />
+            <element signature="class#5395:8265" expanded="false" />
+            <element signature="method#handle#0;class#5395:8265" expanded="false" />
+            <element signature="e#6485#6532#0" expanded="false" />
+            <element signature="method#main#0;class#Alpha#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Food/Food.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="94" column="30" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
+        <state relative-caret-position="170">
+          <caret line="128" column="21" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#Food#0" expanded="false" />
             <element signature="method#initFood#0;class#Food#0" expanded="false" />
             <element signature="method#getLocationForFood#0;class#Food#0" expanded="false" />
-            <element signature="e#2187#2223#0" expanded="false" />
+            <element signature="e#2259#2295#0" expanded="false" />
             <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
-            <element signature="e#5074#5075#0" expanded="true" />
-            <element signature="e#5101#5102#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -3,6 +3,8 @@ package Food;
 import Snake.Snake;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
@@ -124,6 +126,7 @@ public class Food {
                     //This means that the food is being hit
                     snake.setScore(snake.getScore()+1); //update the score of relevant snake
                     snake.addTrailingScale();
+                     //playSound();
                     //update the location of food
                     initFood(snakes);//display food at new location
                     break;
@@ -131,6 +134,12 @@ public class Food {
             }
         }
 
+    }
+
+    private void playSound() {
+        Media media =  new Media("file:eat_effect.MP3");
+        MediaPlayer player = new MediaPlayer(media);
+        player.play();
     }
 
     //endregion
