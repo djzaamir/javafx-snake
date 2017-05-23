@@ -1,7 +1,11 @@
 package Alpha;
 import Food.Food;
+import com.sun.org.apache.bcel.internal.generic.NEW;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
@@ -17,6 +21,8 @@ import root_EventHandler_thread.root_Eventhandler_thread;
 import scale.Scale;
 
 import javax.swing.*;
+
+import static javafx.application.Platform.*;
 
 /**
  * Created by Aamir on 5/19/2017.
@@ -36,11 +42,12 @@ public class Alpha extends Application{
     private Snake snake ,  snake2;
     private Food food;
     private MenuBar menubar;
-    private Menu file   , Help;
-    private MenuItem About , exit;
+    private Menu file  , Help;
+    private MenuItem About , exit ,New_game;
     private final int initial_scale = 5;
     private final int window_width  = 1250;
     private final int window_height = 600;
+    private Stage primaryStageC = null;
     //endregion
 
     //region Constructer
@@ -59,10 +66,12 @@ public class Alpha extends Application{
     //Entry point for javaFx framework
     public void start(Stage primaryStage) throws Exception {
 
+        primaryStageC = primaryStageC;
         //region Main Setup , look and feel
         //Setting up basic attributes for Stag
         primaryStage.setTitle("Shaolin Dual Snakes");
         primaryStage.setResizable(false);
+
 
 
         //Setting up very basic window structure for the app
@@ -89,22 +98,24 @@ public class Alpha extends Application{
 
         //region Event Handler's  and THREADS For input And Menu items
 
-          //region Handlers for scene and about
-        root_Eventhandler_thread Parent_Input_Threaded_EventHandler = new root_Eventhandler_thread(snake,scene,About);//snake is passed in because we need Key ENUMS present inside snake class
-        Thread event_handler_thread = new Thread(Parent_Input_Threaded_EventHandler);
-        event_handler_thread.start();
-        //endregion
+          //region Handlers for scene and about and New_game
+            root_Eventhandler_thread Parent_Input_Threaded_EventHandler = new root_Eventhandler_thread(snake,scene,About);//snake is passed in because we need Key ENUMS present inside snake class
+            Thread event_handler_thread = new Thread(Parent_Input_Threaded_EventHandler);
+            event_handler_thread.start();
+           //endregion
 
           //region Snake-2(Computer Snake) Running in seprate thread  , (its update method)
         //Snake no 2 update method is running is sperate thread
         //Also before starting the thread we are going to pass the food and user snake object as well to computer snake
         snake2.setFood(food);
         snake2.setUser_snake(snake);
-        snake2.setSnake_speed(333);
+        snake2.setSnake_speed(200);
         //Now seperating from Main thread
         Thread snk2 = new Thread(snake2);
          snk2.start();
         //endregion
+
+         exit.setOnAction(e -> Platform.exit()); //lamda expression for exiting
 
         //endregion
 
@@ -183,7 +194,7 @@ public class Alpha extends Application{
                     //If user snake is not alive
                     if (!snake.isAlive()){
                         this.stop();
-                        JOptionPane.showMessageDialog(null , "Game Over Dude! \n You Have Score :"+snake.getScore() + " Points");
+                        JOptionPane.showMessageDialog(null , "Game Over Dude! \n You Have Scored :"+snake.getScore() + " Points");
                     }
 
 
@@ -217,14 +228,16 @@ public class Alpha extends Application{
         menubar  = new MenuBar();
 
         //Main menu Options
-        file = new Menu("File");
-        Help = new Menu("Help");
+        file     = new Menu("File");
+        Help     = new Menu("Help");
+        New_game = new MenuItem("New Game");
 
         //Sub menu items inside those menus
         About = new MenuItem("About Developer");
         exit  = new MenuItem("Exit");
-        Help.getItems().addAll(About , exit);
-        menubar.getMenus().addAll(file   , Help);
+        Help.getItems().addAll(About);
+        file.getItems().addAll(exit);
+        menubar.getMenus().addAll(file , Help);
     }
     //endregion
 }

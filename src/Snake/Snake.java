@@ -25,6 +25,7 @@ public class Snake  implements  Runnable{
       public enum DIRECTION  {LEFT , RIGHT , UP , DOWN };
       private DIRECTION snake_direction;
       private int movement_offet = 10;
+      private  int ai_movement_offset = 5;
       private int score = 0;
       private  int window_width ,  window_height;
       private Snake user_snake;
@@ -127,8 +128,8 @@ public class Snake  implements  Runnable{
                 generateNewHeadNode();
             }else{
                //Generates snake direction based on some algorithm
-              //generateNewNodeArtificialIntelligence();
-              generateNewHeadNode();
+              generateNewNodeArtificialIntelligence();
+              //generateNewHeadNode();
             }
         //And seperate function call for artifical intelligence  computer snake
 
@@ -192,6 +193,52 @@ public class Snake  implements  Runnable{
 
     //Artificial Intelligence function , to control snake automatically
     private void generateNewNodeArtificialIntelligence(){
+        int rand_direction =  new Random().nextInt(4)+1; //adding one because it can return 0 as well
+        /*
+        * 1 = > left
+        * 2 => up
+        * 3 => right
+        * 4 => down
+        * */
+        Scale head_node  = this.scales.get(0);
+        switch (rand_direction){
+            case 1:
+                //left
+                //Decrement x
+
+                //Changing the location of Head node
+                boolean new_cord_good = false;
+                this.scales.get(0).setLoc_x(head_node.getLoc_x()-this.radius-this.movement_offet);
+                break;
+            case 2:
+                //up
+                //Decrement y
+
+
+                //Changing the location of Head node
+                this.scales.get(0).setLoc_y(head_node.getLoc_y()-this.radius-this.movement_offet);
+
+                break;
+            case 3:
+                //right
+                //Increment X
+
+                //Changing the location of Head node
+                this.scales.get(0).setLoc_x(head_node.getLoc_x()+this.radius+this.movement_offet);
+                break;
+            case 4:
+                //down
+                //Increment Y
+
+                //Changing the location of Head node
+                this.scales.get(0).setLoc_y(head_node.getLoc_y()+this.radius+this.movement_offet);
+
+                break;
+            default:
+                // do nothing for now
+                break;
+        }
+        this.scales.get(0).isScaleHittingAnyWall();
 
     }
 

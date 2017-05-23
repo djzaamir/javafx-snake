@@ -3,6 +3,7 @@ package Food;
 import Snake.Snake;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.media.AudioClip;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
@@ -137,9 +138,11 @@ public class Food {
     }
 
     private void playSound() {
-        Media media =  new Media("file:eat_effect.MP3");
-        MediaPlayer player = new MediaPlayer(media);
-        player.play();
+        AudioClip mApplause = new AudioClip(this.getClass().getResource("file:eat_effect.MP3").toExternalForm());
+        mApplause.play();
+        //Media media =  new Media("file:eat_effect.MP3");
+        //MediaPlayer player = new MediaPlayer(media);
+        //player.play();
     }
 
     //endregion
