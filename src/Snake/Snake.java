@@ -128,8 +128,8 @@ public class Snake  implements  Runnable{
                 generateNewHeadNode();
             }else{
                //Generates snake direction based on some algorithm
-               //generateNewNodeArtificialIntelligence();
-              generateNewHeadNode();
+                  //generateNewNodeArtificialIntelligence();
+                generateNewHeadNode();
             }
         //And seperate function call for artifical intelligence  computer snake
 
@@ -325,11 +325,19 @@ public class Snake  implements  Runnable{
 
     @Override
     public void run() {
+        int add_scale_counter = 0;
         while (true){
             //Implement the new Direction change functionality after S seconds
 
 
               int rand_direction = new Random().nextInt(4)+1;
+              //Incrementing add scale
+              add_scale_counter++;
+             if (add_scale_counter==3){
+                 //Add scale
+                 this.addTrailingScale();
+                 add_scale_counter = 0;
+             }
               /*
               * 1 = > left
               * 2 => up
@@ -337,6 +345,7 @@ public class Snake  implements  Runnable{
               * 4 => down
               * */
             switch (rand_direction){
+
                 case 1:
                     //Assign left direction for ai snake object
                     if(snake_direction != DIRECTION.RIGHT){
@@ -367,7 +376,7 @@ public class Snake  implements  Runnable{
 
             //try to change direction after every 1.5 seconds
             try {
-                Thread.sleep(1500);
+                Thread.sleep(1000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
