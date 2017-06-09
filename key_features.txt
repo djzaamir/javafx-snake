@@ -1,0 +1,3 @@
+-> Use of OPP for individual scales , food and the snake as a whole.
+-> Use of euclidean distance as Point2d function at various  places.
+-> Use of lambda functions as event handlers.

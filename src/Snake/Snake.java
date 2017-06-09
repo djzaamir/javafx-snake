@@ -201,10 +201,12 @@ public class Snake  implements  Runnable{
         * 4 => down
         * */
         Scale head_node  = this.scales.get(0);
+
         switch (rand_direction){
             case 1:
                 //left
                 //Decrement x
+
 
                 //Changing the location of Head node
                 boolean new_cord_good = false;
@@ -242,6 +244,17 @@ public class Snake  implements  Runnable{
 
     }
 
+    //function to check if new incoming cords exist in the scales list
+    private boolean ifNewCordsExist(Scale scale){
+        for(Scale c :this.scales){
+
+            //Now checking if any of the scale matches with new scale
+            if  (scale.getLoc_x() == scale.getLoc_x()   &&  scale.getLoc_y() == scale.getLoc_y()){
+                return true;
+            }
+        }
+        return false;
+    }
 
     //This function is to change all scales color in case of collision ,
     //However its not working properly
@@ -318,6 +331,7 @@ public class Snake  implements  Runnable{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+
             try {
                 this.timerCountToAddScale++;
                 if (this.timerCountToAddScale == 15){ //then it means Required time 5 seconds have been elplashed add new scale

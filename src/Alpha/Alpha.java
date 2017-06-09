@@ -23,9 +23,7 @@ import scale.Scale;
 import javax.swing.*;
 
 import static javafx.application.Platform.*;
-
-/**
- * Created by Aamir on 5/19/2017.
+/*
  * Each scale will be updated individually
  * Each snake will be updating each scale
  * Each snake will assigning new cords to the head node of snake
@@ -96,7 +94,7 @@ public class Alpha extends Application{
         root.getChildren().add(holder);
         //endregion
 
-        //region Event Handler's  and THREADS For input And Menu items
+        //region Event Handler's  and THREADS For input And Menu items and app exit
 
           //region Handlers for scene and about and New_game
             root_Eventhandler_thread Parent_Input_Threaded_EventHandler = new root_Eventhandler_thread(snake,scene,About);//snake is passed in because we need Key ENUMS present inside snake class
@@ -110,12 +108,14 @@ public class Alpha extends Application{
         snake2.setFood(food);
         snake2.setUser_snake(snake);
         snake2.setSnake_speed(200);
-        //Now seperating from Main thread
+
+        //Now separating from Main thread (it is imp here to know that the update function will be called from this Main thread in game loop)
+        //This Snake2 thread is solely here for its direction change decision which will be taking place After every S seconds
         Thread snk2 = new Thread(snake2);
          snk2.start();
         //endregion
 
-         exit.setOnAction(e -> Platform.exit()); //lamda expression for exiting
+          exit.setOnAction(e -> Platform.exit()); //lamda expression for exiting
 
         //endregion
 
@@ -163,7 +163,7 @@ public class Alpha extends Application{
                         gc.clearRect(0 , 0 , window_width , window_height);
 
                         try {
-                            snake.updateSnake();
+                            snake.updateSnake(); //User snake update operation
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }

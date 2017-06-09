@@ -2,7 +2,7 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/scale/Scale.java" description="The block of code is not working as it should be , so i am not using this function instead i am still using initScale function" line="40" mnemonic="1" />
-    <bookmark url="file://$PROJECT_DIR$/src/Alpha/Alpha.java" description="Too many different branches of event handler classes , pack them into neat and simple classes to follow , probably one Main class like Root_Event_Controller and then inside that controller class goes Action Methods for different threads or probably full blown sub thread classes" line="100" mnemonic="2" />
+    <bookmark url="file://$PROJECT_DIR$/src/Alpha/Alpha.java" description="Too many different branches of event handler classes , pack them into neat and simple classes to follow , probably one Main class like Root_Event_Controller and then inside that controller class goes Action Methods for different threads or probably full blown sub thread classes" line="98" mnemonic="2" />
     <bookmark url="file://$PROJECT_DIR$/src/Food/Food.java" description="Sound not being played , probably because its not detecting sound file" line="129" mnemonic="3" />
   </component>
   <component name="ChangeListManager">
@@ -28,79 +28,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Alpha.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Alpha.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="238" column="31" selection-start-line="238" selection-start-column="31" selection-end-line="238" selection-end-column="31" />
+            <state relative-caret-position="142">
+              <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
               <folding>
-                <element signature="docComment;class#Alpha#0" expanded="false" />
-                <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
                 <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
                 <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
-                <element signature="e#2395#2430#0" expanded="false" />
-                <element signature="e#3975#4056#0" expanded="false" />
-                <element signature="e#4582#4643#0" expanded="false" />
-                <element signature="e#5762#5780#0" expanded="false" />
-                <element signature="class#5795:8666" expanded="false" />
-                <element signature="method#handle#0;class#5795:8666" expanded="false" />
-                <element signature="e#6885#6932#0" expanded="false" />
-                <element signature="method#main#0;class#Alpha#0" expanded="false" />
+                <element signature="e#2359#2394#0" expanded="false" />
+                <element signature="e#3539#3589#0" expanded="false" />
+                <element signature="e#4788#4849#0" expanded="false" />
+                <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="root_Eventhandler_thread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/root_EventHandler_thread/root_Eventhandler_thread.java">
+      <file leaf-file-name="Snake.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="191">
+              <caret line="334" column="16" selection-start-line="334" selection-start-column="16" selection-end-line="334" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Snake.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
+      <file leaf-file-name="key_features.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/key_features.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
-              <folding>
-                <element signature="docComment;class#Snake#0" expanded="false" />
-                <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
-                <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
-                <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-                <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
-                <element signature="e#1993#2014#0" expanded="false" />
-                <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-                <element signature="method#generateNewHeadNode#0;class#Snake#0" expanded="false" />
-                <element signature="method#ifSnakeCollided#0;class#Snake#0" expanded="false" />
-                <element signature="method#isCollidingWithItSelf#0;class#Snake#0" expanded="false" />
-                <element signature="e#9668#9748#0" expanded="false" />
-                <element signature="method#hitsOtherSnake#0;class#Snake#0" expanded="false" />
-                <element signature="method#isCollidingWithFood#0;class#Snake#0" expanded="false" />
-                <element signature="e#12609#12637#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Food.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Food/Food.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-              <folding>
-                <element signature="docComment;class#Food#0" expanded="false" />
-                <element signature="n#!!doc;n#image#0;n#Food#0" expanded="false" />
-                <element signature="n#!!doc;n#Food#0;n#Food#0" expanded="false" />
-                <element signature="method#Food#0;class#Food#0" expanded="false" />
-                <element signature="method#initFood#0;class#Food#0" expanded="false" />
-                <element signature="method#getLocationForFood#0;class#Food#0" expanded="false" />
-                <element signature="e#2296#2332#0" expanded="false" />
-                <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,8 +94,9 @@
         <option value="$PROJECT_DIR$/src/Food/Food.java" />
         <option value="$PROJECT_DIR$/src/Menu_Actions/Menu_Actions.java" />
         <option value="$PROJECT_DIR$/src/root_EventHandler_thread/root_Eventhandler_thread.java" />
-        <option value="$PROJECT_DIR$/src/Snake/Snake.java" />
+        <option value="$PROJECT_DIR$/key_features.txt" />
         <option value="$PROJECT_DIR$/src/Alpha/Alpha.java" />
+        <option value="$PROJECT_DIR$/src/Snake/Snake.java" />
       </list>
     </option>
   </component>
@@ -209,6 +170,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Snake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -220,11 +185,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="out" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="production" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -636,11 +597,17 @@
       <workItem from="1495459774532" duration="9851000" />
       <workItem from="1495473751418" duration="1847000" />
       <workItem from="1495553023855" duration="3024000" />
+      <workItem from="1495598348558" duration="295000" />
+      <workItem from="1495603440570" duration="3392000" />
+      <workItem from="1495622666704" duration="134000" />
+      <workItem from="1495659919601" duration="19000" />
+      <workItem from="1496762515737" duration="3063000" />
+      <workItem from="1496978769980" duration="963000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97432000" />
+    <option name="totallyTimeSpent" value="105298000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -653,11 +620,11 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789317" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="5" y="276" width="1356" height="216" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32738096" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="5" y="276" width="1356" height="216" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16325037" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15959005" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -716,7 +683,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="48" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -727,21 +694,122 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
+            <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2359#2394#0" expanded="false" />
+            <element signature="e#3539#3589#0" expanded="false" />
+            <element signature="e#4788#4849#0" expanded="false" />
+            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Food/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
+            <element signature="docComment;class#Food#0" expanded="false" />
+            <element signature="n#!!doc;n#image#0;n#Food#0" expanded="false" />
+            <element signature="n#!!doc;n#Food#0;n#Food#0" expanded="false" />
+            <element signature="method#Food#0;class#Food#0" expanded="false" />
+            <element signature="method#initFood#0;class#Food#0" expanded="false" />
+            <element signature="e#2296#2332#0" expanded="false" />
+            <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
-            <element signature="e#2395#2430#0" expanded="false" />
-            <element signature="e#3975#4056#0" expanded="false" />
-            <element signature="e#4582#4643#0" expanded="false" />
-            <element signature="e#5762#5780#0" expanded="false" />
-            <element signature="class#5795:8666" expanded="false" />
-            <element signature="method#handle#0;class#5795:8666" expanded="false" />
-            <element signature="e#6885#6932#0" expanded="false" />
-            <element signature="method#main#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2359#2394#0" expanded="false" />
+            <element signature="e#3539#3589#0" expanded="false" />
+            <element signature="e#4788#4849#0" expanded="false" />
+            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#scale#0;n#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#Scale#0;n#Scale#0" expanded="false" />
+            <element signature="method#initScale#0;class#Scale#0" expanded="false" />
+            <element signature="method#updateScale#0;class#Scale#0" expanded="false" />
+            <element signature="e#1423#1480#0" expanded="false" />
+            <element signature="e#2205#2233#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
+            <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2359#2394#0" expanded="false" />
+            <element signature="e#3539#3589#0" expanded="false" />
+            <element signature="e#4788#4849#0" expanded="false" />
+            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/root_EventHandler_thread/root_Eventhandler_thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1887">
+          <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Food/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Food#0" expanded="false" />
+            <element signature="n#!!doc;n#image#0;n#Food#0" expanded="false" />
+            <element signature="n#!!doc;n#Food#0;n#Food#0" expanded="false" />
+            <element signature="method#Food#0;class#Food#0" expanded="false" />
+            <element signature="method#initFood#0;class#Food#0" expanded="false" />
+            <element signature="e#2296#2332#0" expanded="false" />
+            <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
+            <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2359#2394#0" expanded="false" />
+            <element signature="e#3539#3589#0" expanded="false" />
+            <element signature="e#4788#4849#0" expanded="false" />
+            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -756,7 +824,6 @@
             <element signature="n#!!doc;n#Food#0;n#Food#0" expanded="false" />
             <element signature="method#Food#0;class#Food#0" expanded="false" />
             <element signature="method#initFood#0;class#Food#0" expanded="false" />
-            <element signature="method#getLocationForFood#0;class#Food#0" expanded="false" />
             <element signature="e#2296#2332#0" expanded="false" />
             <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
           </folding>
@@ -768,18 +835,12 @@
         <state relative-caret-position="204">
           <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
           <folding>
-            <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
-            <element signature="e#2395#2430#0" expanded="false" />
-            <element signature="e#3975#4056#0" expanded="false" />
-            <element signature="e#4582#4643#0" expanded="false" />
-            <element signature="e#5762#5780#0" expanded="false" />
-            <element signature="class#5795:8666" expanded="false" />
-            <element signature="method#handle#0;class#5795:8666" expanded="false" />
-            <element signature="e#6885#6932#0" expanded="false" />
-            <element signature="method#main#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2359#2394#0" expanded="false" />
+            <element signature="e#3539#3589#0" expanded="false" />
+            <element signature="e#4788#4849#0" expanded="false" />
+            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -794,7 +855,6 @@
             <element signature="n#!!doc;n#Food#0;n#Food#0" expanded="false" />
             <element signature="method#Food#0;class#Food#0" expanded="false" />
             <element signature="method#initFood#0;class#Food#0" expanded="false" />
-            <element signature="method#getLocationForFood#0;class#Food#0" expanded="false" />
             <element signature="e#2296#2332#0" expanded="false" />
             <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
           </folding>
@@ -806,18 +866,12 @@
         <state relative-caret-position="357">
           <caret line="92" column="7" selection-start-line="92" selection-start-column="7" selection-end-line="92" selection-end-column="7" />
           <folding>
-            <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
-            <element signature="e#2395#2430#0" expanded="false" />
-            <element signature="e#3975#4056#0" expanded="false" />
-            <element signature="e#4582#4643#0" expanded="false" />
-            <element signature="e#5762#5780#0" expanded="false" />
-            <element signature="class#5795:8666" expanded="false" />
-            <element signature="method#handle#0;class#5795:8666" expanded="false" />
-            <element signature="e#6885#6932#0" expanded="false" />
-            <element signature="method#main#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2359#2394#0" expanded="false" />
+            <element signature="e#3539#3589#0" expanded="false" />
+            <element signature="e#4788#4849#0" expanded="false" />
+            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -826,22 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Snake#0" expanded="false" />
-            <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
-            <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
-            <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-            <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
-            <element signature="e#1993#2014#0" expanded="false" />
-            <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-            <element signature="method#generateNewHeadNode#0;class#Snake#0" expanded="false" />
-            <element signature="method#ifSnakeCollided#0;class#Snake#0" expanded="false" />
-            <element signature="method#isCollidingWithItSelf#0;class#Snake#0" expanded="false" />
-            <element signature="e#9668#9748#0" expanded="false" />
-            <element signature="method#hitsOtherSnake#0;class#Snake#0" expanded="false" />
-            <element signature="method#isCollidingWithFood#0;class#Snake#0" expanded="false" />
-            <element signature="e#12609#12637#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -850,18 +888,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
-            <element signature="e#2395#2430#0" expanded="false" />
-            <element signature="e#3975#4056#0" expanded="false" />
-            <element signature="e#4582#4643#0" expanded="false" />
-            <element signature="e#5762#5780#0" expanded="false" />
-            <element signature="class#5795:8666" expanded="false" />
-            <element signature="method#handle#0;class#5795:8666" expanded="false" />
-            <element signature="e#6885#6932#0" expanded="false" />
-            <element signature="method#main#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2359#2394#0" expanded="false" />
+            <element signature="e#3539#3589#0" expanded="false" />
+            <element signature="e#4788#4849#0" expanded="false" />
+            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -870,22 +902,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding>
-            <element signature="docComment;class#Snake#0" expanded="false" />
-            <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
-            <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
-            <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-            <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
-            <element signature="e#1993#2014#0" expanded="false" />
-            <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-            <element signature="method#generateNewHeadNode#0;class#Snake#0" expanded="false" />
-            <element signature="method#ifSnakeCollided#0;class#Snake#0" expanded="false" />
-            <element signature="method#isCollidingWithItSelf#0;class#Snake#0" expanded="false" />
-            <element signature="e#9668#9748#0" expanded="false" />
-            <element signature="method#hitsOtherSnake#0;class#Snake#0" expanded="false" />
-            <element signature="method#isCollidingWithFood#0;class#Snake#0" expanded="false" />
-            <element signature="e#12609#12637#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -893,7 +909,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="63" column="43" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#scale#0;n#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#Scale#0;n#Scale#0" expanded="false" />
+            <element signature="method#initScale#0;class#Scale#0" expanded="false" />
+            <element signature="method#updateScale#0;class#Scale#0" expanded="false" />
+            <element signature="e#1423#1480#0" expanded="false" />
+            <element signature="e#2205#2233#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -907,7 +931,6 @@
             <element signature="n#!!doc;n#Food#0;n#Food#0" expanded="false" />
             <element signature="method#Food#0;class#Food#0" expanded="false" />
             <element signature="method#initFood#0;class#Food#0" expanded="false" />
-            <element signature="method#getLocationForFood#0;class#Food#0" expanded="false" />
             <element signature="e#2296#2332#0" expanded="false" />
             <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
           </folding>
@@ -919,18 +942,12 @@
         <state relative-caret-position="1802">
           <caret line="191" column="0" selection-start-line="191" selection-start-column="0" selection-end-line="191" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
-            <element signature="e#2395#2430#0" expanded="false" />
-            <element signature="e#3975#4056#0" expanded="false" />
-            <element signature="e#4582#4643#0" expanded="false" />
-            <element signature="e#5762#5780#0" expanded="false" />
-            <element signature="class#5795:8666" expanded="false" />
-            <element signature="method#handle#0;class#5795:8666" expanded="false" />
-            <element signature="e#6885#6932#0" expanded="false" />
-            <element signature="method#main#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2359#2394#0" expanded="false" />
+            <element signature="e#3539#3589#0" expanded="false" />
+            <element signature="e#4788#4849#0" expanded="false" />
+            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -939,7 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,18 +964,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
-            <element signature="e#2395#2430#0" expanded="false" />
-            <element signature="e#3975#4056#0" expanded="false" />
-            <element signature="e#4582#4643#0" expanded="false" />
-            <element signature="e#5762#5780#0" expanded="false" />
-            <element signature="class#5795:8666" expanded="false" />
-            <element signature="method#handle#0;class#5795:8666" expanded="false" />
-            <element signature="e#6885#6932#0" expanded="false" />
-            <element signature="method#main#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2359#2394#0" expanded="false" />
+            <element signature="e#3539#3589#0" expanded="false" />
+            <element signature="e#4788#4849#0" expanded="false" />
+            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -969,18 +979,12 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
-            <element signature="e#2395#2430#0" expanded="false" />
-            <element signature="e#3975#4056#0" expanded="false" />
-            <element signature="e#4582#4643#0" expanded="false" />
-            <element signature="e#5762#5780#0" expanded="false" />
-            <element signature="class#5795:8666" expanded="false" />
-            <element signature="method#handle#0;class#5795:8666" expanded="false" />
-            <element signature="e#6885#6932#0" expanded="false" />
-            <element signature="method#main#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2359#2394#0" expanded="false" />
+            <element signature="e#3539#3589#0" expanded="false" />
+            <element signature="e#4788#4849#0" expanded="false" />
+            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1133,22 +1137,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1479">
           <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Snake#0" expanded="false" />
-            <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
-            <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
-            <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-            <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
-            <element signature="e#1993#2014#0" expanded="false" />
-            <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-            <element signature="method#generateNewHeadNode#0;class#Snake#0" expanded="false" />
-            <element signature="method#ifSnakeCollided#0;class#Snake#0" expanded="false" />
-            <element signature="method#isCollidingWithItSelf#0;class#Snake#0" expanded="false" />
-            <element signature="e#9668#9748#0" expanded="false" />
-            <element signature="method#hitsOtherSnake#0;class#Snake#0" expanded="false" />
-            <element signature="method#isCollidingWithFood#0;class#Snake#0" expanded="false" />
-            <element signature="e#12609#12637#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1156,7 +1144,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="docComment;class#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#scale#0;n#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#Scale#0;n#Scale#0" expanded="false" />
+            <element signature="method#initScale#0;class#Scale#0" expanded="false" />
+            <element signature="method#updateScale#0;class#Scale#0" expanded="false" />
+            <element signature="e#1423#1480#0" expanded="false" />
+            <element signature="e#2205#2233#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1341,21 +1337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Food/Cords.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/Runnable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1363,54 +1344,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Food/Food.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Food#0" expanded="false" />
-            <element signature="n#!!doc;n#image#0;n#Food#0" expanded="false" />
-            <element signature="n#!!doc;n#Food#0;n#Food#0" expanded="false" />
-            <element signature="method#Food#0;class#Food#0" expanded="false" />
-            <element signature="method#initFood#0;class#Food#0" expanded="false" />
-            <element signature="method#getLocationForFood#0;class#Food#0" expanded="false" />
-            <element signature="e#2296#2332#0" expanded="false" />
-            <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Menu_Actions/Menu_Actions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding>
-            <element signature="n#!!doc;n#Menu_Actions#0;n#Menu_Actions#0" expanded="false" />
-            <element signature="n#!!doc;n#displayAboutDeveloper#0;n#Menu_Actions#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="224" column="0" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#Snake#0" expanded="false" />
-            <element signature="class#DIRECTION#0;class#Snake#0" expanded="false" />
-            <element signature="n#!!doc;n#Snake#0;n#Snake#0" expanded="false" />
-            <element signature="method#Snake#0;class#Snake#0" expanded="false" />
-            <element signature="method#initSnake#0;class#Snake#0" expanded="false" />
-            <element signature="e#1993#2014#0" expanded="false" />
-            <element signature="method#addTrailingScale#0;class#Snake#0" expanded="false" />
-            <element signature="method#generateNewHeadNode#0;class#Snake#0" expanded="false" />
-            <element signature="method#ifSnakeCollided#0;class#Snake#0" expanded="false" />
-            <element signature="method#isCollidingWithItSelf#0;class#Snake#0" expanded="false" />
-            <element signature="e#9668#9748#0" expanded="false" />
-            <element signature="method#hitsOtherSnake#0;class#Snake#0" expanded="false" />
-            <element signature="method#isCollidingWithFood#0;class#Snake#0" expanded="false" />
-            <element signature="e#12609#12637#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1418,28 +1355,88 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scale/Scale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="63" column="0" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#scale#0;n#Scale#0" expanded="false" />
+            <element signature="n#!!doc;n#Scale#0;n#Scale#0" expanded="false" />
+            <element signature="method#initScale#0;class#Scale#0" expanded="false" />
+            <element signature="method#updateScale#0;class#Scale#0" expanded="false" />
+            <element signature="e#1423#1480#0" expanded="false" />
+            <element signature="e#2205#2233#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Food/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#Food#0" expanded="false" />
+            <element signature="n#!!doc;n#image#0;n#Food#0" expanded="false" />
+            <element signature="n#!!doc;n#Food#0;n#Food#0" expanded="false" />
+            <element signature="method#Food#0;class#Food#0" expanded="false" />
+            <element signature="method#initFood#0;class#Food#0" expanded="false" />
+            <element signature="e#2296#2332#0" expanded="false" />
+            <element signature="n#!!doc;n#getFood_loc_y#0;n#Food#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Food/Cords.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="e#299#300#0" expanded="false" />
+            <element signature="e#323#324#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/key_features.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_45/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="769" column="0" selection-start-line="769" selection-start-column="0" selection-end-line="769" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Alpha/Alpha.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="238" column="31" selection-start-line="238" selection-start-column="31" selection-end-line="238" selection-end-column="31" />
+        <state relative-caret-position="142">
+          <caret line="39" column="30" selection-start-line="39" selection-start-column="30" selection-end-line="39" selection-end-column="30" />
           <folding>
-            <element signature="docComment;class#Alpha#0" expanded="false" />
-            <element signature="n#!!doc;n#snake#0;n#Alpha#0" expanded="false" />
             <element signature="n#!!doc;n#Alpha#0;n#Alpha#0" expanded="false" />
             <element signature="method#Alpha#0;class#Alpha#0" expanded="false" />
-            <element signature="e#2395#2430#0" expanded="false" />
-            <element signature="e#3975#4056#0" expanded="false" />
-            <element signature="e#4582#4643#0" expanded="false" />
-            <element signature="e#5762#5780#0" expanded="false" />
-            <element signature="class#5795:8666" expanded="false" />
-            <element signature="method#handle#0;class#5795:8666" expanded="false" />
-            <element signature="e#6885#6932#0" expanded="false" />
-            <element signature="method#main#0;class#Alpha#0" expanded="false" />
+            <element signature="e#2359#2394#0" expanded="false" />
+            <element signature="e#3539#3589#0" expanded="false" />
+            <element signature="e#4788#4849#0" expanded="false" />
+            <element signature="method#initComponents#0;class#Alpha#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Snake/Snake.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="334" column="16" selection-start-line="334" selection-start-column="16" selection-end-line="334" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
