@@ -169,7 +169,8 @@ public class Alpha extends Application{
                             e.printStackTrace();
                         }
 
-                        snake.hitsOtherSnake(snake2);
+                        snake.hitsOtherSnake(snake2); //hitting user snake with computer
+                        snake2.hitsOtherSnake(snake);  //hitting Ai with user snake
                         food.handleFoodCollision(snakes);
                     }
 
@@ -194,6 +195,10 @@ public class Alpha extends Application{
 
                     //If user snake is not alive
                     if (!snake.isAlive()){
+                        this.stop();
+                        JOptionPane.showMessageDialog(null , "Game Over Dude! \n You Have Scored :"+snake.getScore() + " Points");
+                    }
+                    else if (!snake2.isAlive() ){
                         this.stop();
                         JOptionPane.showMessageDialog(null , "Game Over Dude! \n You Have Scored :"+snake.getScore() + " Points");
                     }
