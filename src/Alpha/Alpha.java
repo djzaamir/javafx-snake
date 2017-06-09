@@ -107,7 +107,7 @@ public class Alpha extends Application{
         //Also before starting the thread we are going to pass the food and user snake object as well to computer snake
         snake2.setFood(food);
         snake2.setUser_snake(snake);
-        snake2.setSnake_speed(200);
+        snake2.setSnake_speed(300);
 
         //Now separating from Main thread (it is imp here to know that the update function will be called from this Main thread in game loop)
         //This Snake2 thread is solely here for its direction change decision which will be taking place After every S seconds
@@ -164,6 +164,7 @@ public class Alpha extends Application{
 
                         try {
                             snake.updateSnake(); //User snake update operation
+                            snake2.updateSnake(); //AI snake update
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }

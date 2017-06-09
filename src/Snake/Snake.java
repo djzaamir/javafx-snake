@@ -128,8 +128,8 @@ public class Snake  implements  Runnable{
                 generateNewHeadNode();
             }else{
                //Generates snake direction based on some algorithm
-              generateNewNodeArtificialIntelligence();
-              //generateNewHeadNode();
+               //generateNewNodeArtificialIntelligence();
+              generateNewHeadNode();
             }
         //And seperate function call for artifical intelligence  computer snake
 
@@ -322,26 +322,52 @@ public class Snake  implements  Runnable{
          return false;
     }
 
+
     @Override
     public void run() {
         while (true){
-            try {
-                this.updateSnake();
-                this.hitsOtherSnake(user_snake);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            //Implement the new Direction change functionality after S seconds
+
+
+              int rand_direction = new Random().nextInt(4)+1;
+              /*
+              * 1 = > left
+              * 2 => up
+              * 3 => right
+              * 4 => down
+              * */
+            switch (rand_direction){
+                case 1:
+                    //Assign left direction for ai snake object
+                    if(snake_direction != DIRECTION.RIGHT){
+                        this.snake_direction = DIRECTION.LEFT;
+                    }
+                    break;
+                case 2:
+                    if (snake_direction != DIRECTION.DOWN){
+                        this.snake_direction = DIRECTION.UP;
+                    }
+                    break;
+                case 3:
+                    if (snake_direction != DIRECTION.LEFT){
+                        this.snake_direction = DIRECTION.RIGHT;
+                    }
+                    break;
+                case 4:
+                    if (snake_direction != DIRECTION.UP){
+                        this.snake_direction = DIRECTION.DOWN;
+                    }
+                    break;
+                default:
+                    // do nothing for now
+                    break;
             }
 
+
+
+            //try to change direction after every 1.5 seconds
             try {
-                this.timerCountToAddScale++;
-                if (this.timerCountToAddScale == 15){ //then it means Required time 5 seconds have been elplashed add new scale
-                    //Scale adding mechanism
-                    this.timerCountToAddScale = 0;
-                    this.addTrailingScale();
-                }
-                //Direction change Timer Mechanism
-                this.timerCountToChangeDirection++;
-                Thread.sleep(snake_speed); //this is basically used to control the speed of snake
+                Thread.sleep(1500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
